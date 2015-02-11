@@ -1,14 +1,39 @@
 #sidebar {
-	width: 10em;
+	padding-left:212px;
+	width: 500px;
+	background-color:#dcebf0;
+	margin: 5;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
 }
 
-#sidebar h4 {
-	font-size: 14px;
+#sidebar h4  {
+	font-size: 16px;
 	font-weight: bolder;
-	line-height: 1em;
-	color: ;
+	font-family: Arial black, sans-serif;
+	line-height: 2em;
+	color: #ec2f09;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+#sidebar h4 a {
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #ec2f09
 }
 
 #sidebar p {
+	font-size: 12px;
+	line-height: 1em;
+	font-family: Arial, sans-serif;
+	padding-bottom: 1em;
+}
 
+#sidebar ul {
+	font-size: 12px;
+	line-height: 1em;
+	font-family: Arial, sans-serif;
+	padding-bottom: 1em;
 }
