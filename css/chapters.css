@@ -6,6 +6,7 @@ body {
 h2 {
 	font-family: helvetica, serif;
 	font-size: 160%;
+	color: #ED2F09;
 
 }
 
@@ -21,39 +22,8 @@ h2 {
 	display: inline;
 }
 
-/*#sidebar_one {
-	position: relative;
-	float: right;
-	padding: 5px;
-	margin: 30px;
-	width: 20%;
-	height: 60%;
-	background-color: #ED2F09;
-    border-radius: 25px;
-    margin: auto;
-    text-align: center;
-	font-family: helvetica, serif;
-	color: #F3F3F3;
+#sidebar {
+	background-color: #DCEBF0;
+	padding: 10px;
 }
 
-#sidebar_two
-
-#sidebar_three
-
-#sidebar_four
-
-#sidebar_five
-
-#sidebar_six
-
-#sidebar_seven
-*/
-#sidebar_eight
-
-
-/*blockquote strong {
-	font-weight: bold;
-	color: #ED2F09;
-
-}
-*/
