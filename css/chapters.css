@@ -7,13 +7,25 @@ h2 {
 	font-family: helvetica, serif;
 	font-size: 180%;
 	color: #ED2F09;
-
 }
 
 h3 {
 	font-family: helvetica, serif;
 	font-size: 150%;
 	font-weight: bold;
+	color: #ED2F09;
+}
+
+span {
+	font-family: helvetica, serif;
+	font-size: 120%;
+	font-weight: bolder;
+}
+
+
+
+a {
+	color: #0A6583;
 }
 
 .nav a {
@@ -42,9 +54,4 @@ h3 {
 #resources {
 	background-color: #FCF7CF;
 	padding: 10px;
-}
-
-
-a {
-	color: #0A6583;
 }
