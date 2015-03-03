@@ -27,6 +27,12 @@ a {
 	color: #0A6583;
 }
 
+.navbar {
+	padding: 3px;
+	text-align: center;
+	display: inline-block;
+
+}
 
 #sidebar {
 	background-color: #DCEBF0;
@@ -40,7 +46,7 @@ a {
 
 #resources {
 	background-color: #EAEAEA;
-	padding: 10px;
+	padding: 5px;
 	border-radius: 15px;
 }
 
