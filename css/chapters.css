@@ -23,23 +23,10 @@ span {
 }
 
 
-
 a {
 	color: #0A6583;
 }
 
-.nav a {
-  font-family: helvetica, serif;
-  color: #3D3D3D;
-  font-size: 85%;
-  font-weight: bold;
-  padding: 14px 10px;
-  text-transform: uppercase;
-}
-
-.nav li {
-	display: inline;
-}
 
 #sidebar {
 	background-color: #DCEBF0;
@@ -56,3 +43,16 @@ a {
 	padding: 10px;
 	border-radius: 15px;
 }
+
+/*.nav a {
+  font-family: helvetica, serif;
+  color: #3D3D3D;
+  font-size: 85%;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+	display: inline;
+}*/
