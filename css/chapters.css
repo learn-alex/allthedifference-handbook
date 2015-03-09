@@ -32,11 +32,9 @@ a {
 	color: #0A6583;
 }
 
-.navbar {
-	padding: 3px;
-	text-align: center;
-	display: inline-block;
-
+.anchor {
+	padding-top: 50px;
+    margin-top: -50px;
 }
 
 #sidebar {
@@ -47,7 +45,6 @@ a {
 	border-color: #3D3D3D;*/
 /*	border-radius: 15px;*/
 }
-
 
 #resources {
 	background-color: #EAEAEA;
@@ -63,7 +60,3 @@ a {
   padding: 14px 10px;
   text-transform: uppercase;
 }
-
-.nav li {
-	display: inline;
-}*/
