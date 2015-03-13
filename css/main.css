@@ -326,3 +326,7 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #0085a1;
 }
+
+.author img {
+  margin: 25px 25px 0 0;
+}
