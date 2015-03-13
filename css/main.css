@@ -31,8 +31,8 @@ a img:focus {
   cursor: zoom-in;
 }
 blockquote {
-  color: #808080;
   font-style: italic;
+  margin-top: 25px;
 }
 hr.small {
   max-width: 100px;
@@ -50,7 +50,30 @@ hr.small {
 }
 .navbar .navbar-brand {
   font-weight: 800;
+  float: none;
+  text-align: center;
+  margin: 0 30px;
+  display: block;
 }
+.navbar .navbar-toggle{
+  float: left;
+  margin-left: 15px;
+  margin-right: 0px;
+}
+.navbar. .navbar-collapse{
+  height: 100%;
+}
+.navbar-nav .open .dropdown-menu {
+  position: static;
+  float: none;
+  width: auto;
+  margin-top: 0;
+  background-color: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 .navbar .nav li a {
   font-size: 14px;
   color: #0A6583;
@@ -79,10 +102,6 @@ h4{
 }
 .highlight{
   color: #7D26CD;
-}
-.resources{
-  background-color: #eee;
-  border-radius: 10px;
 }
 .padding{
   padding: 15px;
@@ -134,6 +153,21 @@ h4{
   content: close-quote;
   margin-left: 0.20em;
   vertical-align: -0.3em;
+}
+
+.resources{
+  background-color: #eee;
+  border-radius: 10px;
+}
+.resources .list-unstyled p{
+  font-size: large;
+  margin: 20px 0px;
+}
+.resources .list-unstyled h5{
+  margin-left: 20px;
+  font-size: medium;
+  font-weight: normal;
+  margin-top: -10px;
 }
 .caption {
   text-align: center;
