@@ -131,7 +131,9 @@
 #menu-button #brand{
   text-align: center;
   opacity: 1;
-  margin: 18px 80px;
+  font-size: 18px;
+  margin: 21px 80px;
+  line-height: 20px;
 }
 
 /* Sidebar toggled */
@@ -170,6 +172,7 @@ body.overflow{
   #sidebar-wrapper #sidebar-brand{
     left: 0px;
     background-color: #eee;
+    padding: 10px;
   }
   #sidebar-wrapper .sidebar-nav{
     left: 0px;
