@@ -290,3 +290,15 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #0085a1;
 }
+
+.author img {
+  margin: 25px 25px 0 0;
+}
+
+.in-text-image-left img {
+  margin: 9px 15px 9px 0;
+}
+
+.in-text-image-right img {
+  margin: 25px 0px 9px 0;
+}
