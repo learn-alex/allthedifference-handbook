@@ -33,6 +33,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #sidebar-wrapper #sidebar-brand {
   z-index: 5;
   height: 65px;
@@ -55,6 +56,8 @@
 =======
 =======
 >>>>>>> parent of ea88df0... updated small bugs. added header image for every chapter.
+=======
+>>>>>>> parent of ea88df0... updated small bugs. added header image for every chapter.
 #page-content-wrapper {
     width: 100%;
     position: absolute;
@@ -70,7 +73,11 @@
     z-index: 1000;
     height: 65px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     padding: 11px;
+=======
+    padding: 20px;
+>>>>>>> parent of ea88df0... updated small bugs. added header image for every chapter.
 =======
     padding: 20px;
 >>>>>>> parent of ea88df0... updated small bugs. added header image for every chapter.
@@ -89,7 +96,10 @@
     transition: all 0.5s ease;
     background-color: #eee;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/emma
+=======
+>>>>>>> parent of ea88df0... updated small bugs. added header image for every chapter.
 =======
 >>>>>>> parent of ea88df0... updated small bugs. added header image for every chapter.
 }
@@ -110,6 +120,7 @@
     transition: all 0.5s ease;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #sidebar-wrapper .sidebar-nav li {
   line-height: 25px;
@@ -133,6 +144,10 @@
   text-decoration: none;
   color: #666;
   font-size: 14px;
+=======
+#menu-button .btn{
+    background-color: transparent;
+>>>>>>> parent of ea88df0... updated small bugs. added header image for every chapter.
 =======
 #menu-button .btn{
     background-color: transparent;
