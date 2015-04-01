@@ -226,6 +226,11 @@ h4{
   font-weight: 300;
   margin: 10px 0 0;
 }
+.intro-header .site-heading p {
+  font-size: 15px;
+  line-height: 1;
+  margin: 30 0 10 0;
+}
 
 #intro .intro-header{
   background-position: 50% 20%;
