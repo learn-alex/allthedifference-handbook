@@ -101,7 +101,8 @@ h4{
   height: 10px;
 }
 .highlight{
-  color: #2196F3;
+  background-color: #F3F315;
+  color: black;
 }
 .padding{
   padding: 15px;
@@ -306,4 +307,8 @@ body {
 
 .in-text-image-right img {
   margin: 20px 0px 0px 15px;
+}
+
+li {
+  padding-top: 1em;
 }
