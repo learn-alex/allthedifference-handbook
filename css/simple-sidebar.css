@@ -1,20 +1,20 @@
 
 #wrapper,
 #sidebar-wrapper,
-#sidebar-wrapper #sidebar-brand,
-#sidebar-wrapper .sidebar-nav,
+#page-cover,
 #page-content-wrapper,
 #menu-button,
 #menu-button #brand {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #wrapper{
   z-index: 0;
   position: relative;
+  height: 100%;
 }
 
 
@@ -27,7 +27,7 @@
 }
 
 #page-cover{
-  z-index: 2;
+  z-index: 4;
   position: absolute;
   width: 0%;
   height: 0%;
@@ -36,21 +36,21 @@
 #sidebar-wrapper #sidebar-brand {
   z-index: 5;
   height: 65px;
-  padding: 20px;
-  border-bottom: 1px solid;
+  padding: 10px;
   font-weight: bold;
   color: #333;
   font-size: 16px;
   text-align: center;
   position: fixed;
   top: 0;
-  left: -250px;
+  left: 0px;
   width: 250px;
-  background-color: #f1f1f1;
+  background-color: #673AB7;
+  color: #fff;
 }
 #sidebar-wrapper #sidebar-brand a{
   display: block;
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -61,11 +61,12 @@
   position: fixed;
   top: 65px;
   bottom: 0px;
-  left: -250px;
+  left: 0px;
   width: 250px;
   list-style: none;
   overflow-y: auto;
-  background-color: #f1f1f1;
+  background-color: #eee;
+  box-shadow: -4px 0px 5px -5px #000 inset;
 }
 
 #sidebar-wrapper .sidebar-nav li {
@@ -88,7 +89,7 @@
 #sidebar-wrapper .sidebar-nav li a:hover {
   text-decoration: none;
   color: #333;
-  background-color: #ddd;
+  background-color: rgb(240, 230, 140);
 }
 
 #sidebar-wrapper .sidebar-nav li a:active,
@@ -103,12 +104,13 @@
 
 #page-content-wrapper {
   background-color: #fff;
-  z-index: 1;
+  z-index: 3;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   overflow-x: hidden;
+  height: 100%;
 }
 
 #menu-button{
@@ -120,13 +122,21 @@
   left: 0;
   width: 100%;
   height: 65px;
-  background-color: #f1f1f1;
+  background-color: #673AB7;
+  color: #fff;
 }
 
 #menu-button .btn{
   background-color: transparent;
   float: left;
   outline: 0;
+}
+#menu-button .btn:active,
+#menu-button .btn:hover,
+#menu-button .btn:focus,
+#menu-button .btn:visited{
+  color: #fff;
+  box-shadow: none;
 }
 #menu-button #brand{
   text-align: center;
@@ -143,17 +153,11 @@ body.overflow{
 #wrapper.toggled #page-cover{
   position: fixed;
   top: 65px;
-  left: 0px;
+  left: 250px;
+  right: -250px;
   width: 100%;
   height: 100%;
-  background-color: rgba(255,255,255,0.3);
-}
-#wrapper.toggled #sidebar-wrapper #sidebar-brand{
-  left: 0px;
-  background-color: #eee;
-}
-#wrapper.toggled #sidebar-wrapper .sidebar-nav{
-  left: 0px;
+  background-color: rgba(255,255,255,0);
 }
 #wrapper.toggled #page-content-wrapper{
   left: 250px;
@@ -161,7 +165,6 @@ body.overflow{
 }
 #wrapper.toggled #menu-button{
   left: 250px;
-  background-color: #eee;
 }
 #wrapper.toggled #menu-button #brand{
   opacity: 0;
@@ -171,7 +174,7 @@ body.overflow{
 
   #sidebar-wrapper #sidebar-brand{
     left: 0px;
-    background-color: #eee;
+    background-color: #673AB7;
     padding: 10px;
   }
   #sidebar-wrapper .sidebar-nav{
