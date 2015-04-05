@@ -305,9 +305,24 @@ body {
   margin: 0px 15px 0px 0px;
 }
 
+.in-text-image-round-left img {
+   background-repeat: no-repeat;
+   background-position: 50%;
+   border-radius: 50%;
+   margin: 0px 15px 0px 0px;
+}
+
 .in-text-image-right img {
   margin: 20px 0px 0px 15px;
 }
+
+.in-text-image-round-right img {
+   background-repeat: no-repeat;
+   background-position: 50%;
+   border-radius: 50%;
+   margin: 20px 0px 0px 15px;
+}
+
 
 li {
   padding-top: 1em;
