@@ -12,16 +12,14 @@
   <title>All the Difference: College Bound Handbook</title>
 
   <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/simple-sidebar.css">
 
   <!-- Custom CSS -->
-  <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
 
   <!-- Custom Fonts -->
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -29,22 +27,10 @@
   <!-- Bootstrap Core JavaScript -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/jquery.lazyloadxt.extra.min.js"></script>
+  <script type="text/javascript" src="js/scrollspy.js"></script>
 
   <!-- Custom Theme JavaScript -->
-  <script type="text/javascript">
-
-$(function() {
-  $("#menu-toggle, #page-cover").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-    $("body").toggleClass("overflow");
-  });
-  $("#navbar li>a").click(function(){
-    $("#wrapper").removeClass("toggled");
-    $("body").removeClass("overflow");
-  });
-});
-  </script>
+  <script type="text/javascript" src="js/app.js"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -73,89 +59,91 @@ $(function() {
   <!-- Navigation -->
   <aside id="sidebar-wrapper">
     <div id="sidebar-brand"><a href="#home"><em>All the Difference:</em> College Bound Handbook</a></div>
-    <ul id="navbar" class="sidebar-nav">
-      <li>
-        <a href="#intro/purpose">Introduction</a>
-        <ul class="list-unstyled">
-          <li><a href="#intro/purpose">Purpose</a></li>
-          <li><a href="#intro/background">Background</a></li>
-          <li><a href="#intro/story">Robert and Krishaun's Stories</a></li>
-          <li><a href="#intro/meet">Meet Robert and Krishaun</a></li>
-          <li><a href="#intro/format">Format and Content of this Handbook</a></li>
-          <li><a href="#intro/authors">Handbook Author</a></li>
-          <li class="divider"></li>
-          <li><a href="#intro/resources">Resources</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#ch_1">Chapter One</a>
-        <ul class="list-unstyled">
-          <li><a href="#ch_1/intro">Expectations About College</a></li>
-          <li><a href="#ch_1/thinking">Topic 1: Thinking about expectations</a></li>
-          <li><a href="#ch_1/why">Topic 2: Why college, which college, and how to get there</a></li>
-          <li><a href="#ch_1/financing">Topic 3: Financing college</a></li>
-          <li class="divider"></li>
-          <li><a href="#ch_1/resources">Resources</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#ch_2">Chapter Two</a>
-        <ul class="list-unstyled">
-          <li><a href="#ch_2/intro">Career Paths and Academic Majors</a></li>
-          <li><a href="#ch_2/career">Topic 1: Career paths and expectations</a></li>
-          <li><a href="#ch_2/academic">Topic 2: Academic majors and career goals</a></li>
-          <li class="divider"></li>
-          <li><a href="#ch_2/resources">Resources</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#ch_3">Chapter Three</a>
-        <ul class="list-unstyled">
-          <li><a href="#ch_3/intro">Networks, Relationships, and Resources</a></li>
-          <li><a href="#ch_3/networking">Topic 1: Networking</a></li>
-          <li><a href="#ch_3/fear">Topic 2: Fear of asking for help</a></li>
-          <li><a href="#ch_3/personnel">Topic 3: High school and college personnel expect questions and requests for help from students</a></li>
-          <li><a href="#ch_3/help">Topic 4: Getting help from the right people in your school</a></li>
-          <li class="divider"></li>
-          <li><a href="#ch_3/resources">Resources</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#ch_4">Chapter Four</a>
-        <ul class="list-unstyled">
-          <li><a href="#ch_4/intro">Slips, Stumbles, and Getting Up Again</a></li>
-          <li><a href="#ch_4/mistakes">Topic 1: Making mistakes</a></li>
-          <li><a href="#ch_4/crises">Topic 2: Managing crises</a></li>
-          <li class="divider"></li>
-          <li><a href="#ch_4/resources">Resources</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#ch_5">Chapter Five</a>
-        <ul class="list-unstyled">
-          <li><a href="#ch_5/intro">Managing Time and Studying Smart</a></li>
-          <li><a href="#ch_5/time">Topic 1: Managing time</a></li>
-          <li><a href="#ch_5/reading">Topic 2: Reading and studying</a></li>
-          <li class="divider"></li>
-          <li><a href="#ch_5/resources">Resources</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#ch_6">Chapter Six </a>
-        <ul class="list-unstyled">
-          <li><a href="#ch_6/intro">Getting to the Endgame</a></li>
-          <li><a href="#ch_6/flexible">Topic 1: Managing change and being flexible</a></li>
-          <li><a href="#ch_6/prepare">Topic 2: Preparing for and applying for a job</a></li>
-          <li><a href="#ch_6/job">Topic 3: Job or graduate/professional school</a></li>
-          <li><a href="#ch_6/life">Topic 4: Affording Your New Life</a></li>
-          <li class="divider"></li>
-          <li><a href="#ch_6/resources">Resources</a></li>
-        </ul>
-      </li>
-      <li><a href="#score">Score</a></li>
-      <li><a href="#afterword">Afterword</a></li>
-      <li><a href="#acknowledgments">Acknowledgments</a></li>
-    </ul>
+    <div class="navbar-wrap">
+      <ul id="navbar" class="sidebar-nav">
+        <li>
+          <a href="#intro">Introduction</a>
+          <ul class="list-unstyled">
+            <li><a href="#intro-purpose">Purpose</a></li>
+            <li><a href="#intro-background">Background</a></li>
+            <li><a href="#intro-story">Robert and Krishaun's Stories</a></li>
+            <li><a href="#intro-meet">Meet Robert and Krishaun</a></li>
+            <li><a href="#intro-format">Format and Content of this Handbook</a></li>
+            <li><a href="#intro-authors">Handbook Author</a></li>
+            <li class="divider"></li>
+            <li><a href="#intro-resources">Resources</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#ch_1">Chapter One</a>
+          <ul class="list-unstyled">
+            <li><a href="#ch_1-intro">Expectations About College</a></li>
+            <li><a href="#ch_1-thinking">Topic 1: Thinking about expectations</a></li>
+            <li><a href="#ch_1-why">Topic 2: Why college, which college, and how to get there</a></li>
+            <li><a href="#ch_1-financing">Topic 3: Financing college</a></li>
+            <li class="divider"></li>
+            <li><a href="#ch_1-resources">Resources</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#ch_2">Chapter Two</a>
+          <ul class="list-unstyled">
+            <li><a href="#ch_2-intro">Career Paths and Academic Majors</a></li>
+            <li><a href="#ch_2-career">Topic 1: Career paths and expectations</a></li>
+            <li><a href="#ch_2-academic">Topic 2: Academic majors and career goals</a></li>
+            <li class="divider"></li>
+            <li><a href="#ch_2-resources">Resources</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#ch_3">Chapter Three</a>
+          <ul class="list-unstyled">
+            <li><a href="#ch_3-intro">Networks, Relationships, and Resources</a></li>
+            <li><a href="#ch_3-networking">Topic 1: Networking</a></li>
+            <li><a href="#ch_3-fear">Topic 2: Fear of asking for help</a></li>
+            <li><a href="#ch_3-personnel">Topic 3: High school and college personnel expect questions and requests for help from students</a></li>
+            <li><a href="#ch_3-help">Topic 4: Getting help from the right people in your school</a></li>
+            <li class="divider"></li>
+            <li><a href="#ch_3-resources">Resources</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#ch_4">Chapter Four</a>
+          <ul class="list-unstyled">
+            <li><a href="#ch_4-intro">Slips, Stumbles, and Getting Up Again</a></li>
+            <li><a href="#ch_4-mistakes">Topic 1: Making mistakes</a></li>
+            <li><a href="#ch_4-crises">Topic 2: Managing crises</a></li>
+            <li class="divider"></li>
+            <li><a href="#ch_4-resources">Resources</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#ch_5">Chapter Five</a>
+          <ul class="list-unstyled">
+            <li><a href="#ch_5-intro">Managing Time and Studying Smart</a></li>
+            <li><a href="#ch_5-time">Topic 1: Managing time</a></li>
+            <li><a href="#ch_5-reading">Topic 2: Reading and studying</a></li>
+            <li class="divider"></li>
+            <li><a href="#ch_5-resources">Resources</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#ch_6">Chapter Six </a>
+          <ul class="list-unstyled">
+            <li><a href="#ch_6-intro">Getting to the Endgame</a></li>
+            <li><a href="#ch_6-flexible">Topic 1: Managing change and being flexible</a></li>
+            <li><a href="#ch_6-prepare">Topic 2: Preparing for and applying for a job</a></li>
+            <li><a href="#ch_6-job">Topic 3: Job or graduate/professional school</a></li>
+            <li><a href="#ch_6-life">Topic 4: Affording Your New Life</a></li>
+            <li class="divider"></li>
+            <li><a href="#ch_6-resources">Resources</a></li>
+          </ul>
+        </li>
+        <li><a href="#score">Score</a></li>
+        <li><a href="#afterword">Afterword</a></li>
+        <li><a href="#acknowledgments">Acknowledgments</a></li>
+      </ul>
+    </div>
   </aside>
   <div id="page-cover"></div>
   <!-- Post Content -->
@@ -183,7 +171,7 @@ $(function() {
         </header>
 
         <div class="container-fluid">
-          <section id="intro/purpose" class="row">
+          <section id="intro-purpose" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h2 class="section-heading">Introduction and Purpose</h2>
 
@@ -207,7 +195,7 @@ $(function() {
               <p>We encourage you to use every part of this handbook to find tools and options to make the <em>right choices for you</em>: college, course of study, and life path. It will make you work &mdash; and think. For fun along the way, you can give yourself points as you complete each task. Most important this guide will give you useful information and a new perspective gained from the experiences of students much like you.</p>
             </div>
           </section>
-          <section id="intro/background" class="row">
+          <section id="intro-background" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h2 class="section-heading">Background: <em>All the Difference</em> Film and Major Characters</h2>
 
@@ -216,19 +204,19 @@ $(function() {
               <p>In a later chapter, Dr. Carl Bell, a professor of public health and community psychiatry at the University of Illinois at Chicago, states that youth growing up in a challenging neighborhood like Englewood may also benefit from "protective factors" such as mothers, fathers, grandparents, friends, churches, sports teams, afterschool programs, and teachers. As you watch <em>All the Difference</em>, and view the video clips that accompany this handbook, look for the different types of protective factors and people that lift up Robert and Krishaun to help them create and achieve their dreams. Throughout this handbook, we encourage you to identify and build a network of people whom you can count on to support <em>your</em> dreams.</p>
             </div>
           </section>
-          <section id="intro/story" class="row">
+          <section id="intro-story" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h2 class="section-heading">Robert and Krishaun's Stories</h2>
 
-        <div class="in-text-image-right">
-            <img src="img/allthedifference-robert-1920x1080.jpg" width="50%" height="50%" align="right" />
-        </div>
+              <div class="in-text-image-right">
+                  <img src="img/allthedifference-robert-1920x1080.jpg" width="50%" height="50%" align="right" />
+              </div>
 
               <p><strong><em>Robert Henderson</em></strong> was 17-months old when his father killed his mother. His grandmother Ona, who is now in her eighties, reared Robert and his six siblings. She is a powerful support in Robert's life with a compelling story of her own. A former Mississippi sharecropper, she escaped to Chicago after suffering years of beatings by her husband. After finding work, she brought her nine children to Chicago, had eight more children, and reared all of them on her own. When Robert arrived at Urban Prep, he was failing math and was at least a grade behind in his other classes. He was vulnerable to joining neighborhood gangs and getting into trouble with the law. He graduated high school with honors and attended Lake Forest College on a partial scholarship, starting with majors in history and pre-med. Robert graduated with a double major in history and American studies and a minor in Asian studies. He then joined City Year, an education organization funded by national service. City Year partners with public schools in high-poverty urban communities to help students graduate from high school ready for college and workforce participation. Teams of diverse AmeriCorps members serve full-time in schools, where they directly support academic achievement and student engagement in and out of the classroom. He is working to pay off his college loans and ultimately hopes to go to medical school.</p>
 
-        <div class="in-text-image-left">
-            <img src="img/allthedifference-krishaun-1920x1080.jpg" width="50%" height="50%" align="left" />
-        </div>
+            <div class="in-text-image-left">
+                <img src="img/allthedifference-krishaun-1920x1080.jpg" width="50%" height="50%" align="left" />
+            </div>
         
               <p><strong><em>Krishaun Branch</em></strong>
               was a gang member as were his mother, father, and uncle. He was reared by his mother and had little contact with his father. Being shot and almost dying years ago was a wake-up call for his mother to leave her gang. She changed her life for her own sake and that of her sons. When Krishaun began his studies at Urban Prep, he was at least a grade behind in math and reading and was still dealing drugs to make money. <strong class="highlight">Impetuous</strong> and quick to anger, Krishaun was expelled from Urban Prep during his sophomore year for getting into a fight. He begged to come back after briefly attending a regular public school. Urban Prep saw his potential and readmitted him with strict conditions. Following his graduation, he attended Fisk University with partial scholarships and grants. While he had planned to work in law enforcement, Krishaun instead returned to Urban Prep after his college graduation to work as an advisor to students. He is now becoming a father, which will bring new responsibilities and challenges.</p>
@@ -237,21 +225,20 @@ $(function() {
 
             </div>
           </section>
-          <section id="intro/meet" class="row">
+          <section id="intro-meet" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h2 class="section-heading">Meet Robert and Krishaun</h2>
-          <!--THIS VIDEO WILL BE REPLACED WITH THE CORRECT ONE WITH WES MOORE'S INTRO-->
-          <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src='http://video.pbs.org/partnerplayer/tOygcUyjONMi6p7YAIikzg%3D%3D/?autoplay=false&start=0&end=0&chapterbar=false&topbar=true&endscreen=true'></iframe>
-          </div>
+              <!--THIS VIDEO WILL BE REPLACED WITH THE CORRECT ONE WITH WES MOORE'S INTRO-->
+              <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src='http://video.pbs.org/partnerplayer/tOygcUyjONMi6p7YAIikzg%3D%3D/?autoplay=false&start=0&end=0&chapterbar=false&topbar=true&endscreen=true'></iframe>
+              </div>
 
               <p>The introductory video opens on a chaotic and deadly scene in the South Side of Chicago, the community in which Robert and Krishaun grew up and where their families still live. Segments of the video highlight factors that ultimately made a difference to the lives and success the two men achieved: school (a safe, academically oriented all-male charter high school); mentors, grandmothers and families; college (chosen with a mindfulness of their anticipated careers); academic advisers; and the two young men themselves. Robert and Krishaun talk about the challenges they confront and their determination "to be successful" and not to stop "until I reach my destiny." They will be among the 52 percent of black males who complete high school nationally according to data from the Schott Foundation. They will also be part of the one third &mdash; or 5.5 percent &mdash; of black males who attend college and actually graduate, according to the Maynard Center for Structural Inequality. As the film begins, Krishaun and Robert have the chance to rewrite the future, not just for themselves, but for their families. Will the supports that make all the difference be enough? Just as for them, your choices can make all the difference in where you land in these statistics.</p>
 
               <p>The video is introduced by Wes Moore, a youth advocate, Army combat veteran, and author. His <em>New York Times</em> best-selling book, <em>The Other Wes Moore, </em>is the inspiration for the <em>All the Difference</em> documentary. Wes is a pretty awesome guy in his own right. Check him out on <a href="https://www.facebook.com/iamwesmoore" target="_blank">Facebook</a> or you can follow him on <a href="https://twitter.com/WesMoore1" target="_blank">Twitter</a>.</p>
-
             </div>
           </section>
-          <section id="intro/format" class="row">
+          <section id="intro-format" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h2 class="section-heading">Format and Content of this Handbook</h2>
 
@@ -295,7 +282,7 @@ $(function() {
 
             </div>
           </section>
-          <section id="intro/authors" class="row">
+          <section id="intro-authors" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h2 class="section-heading">Handbook Authors</h2>
 
@@ -303,7 +290,7 @@ $(function() {
 
             </div>
           </section>
-          <section id="intro/resources" class="row">
+          <section id="intro-resources" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 resources">
               <h2 class="section-heading">Resources</h2>
               <ul class="list-unstyled">
@@ -319,7 +306,9 @@ $(function() {
               </ul>
             </div>
           </section>
-                <p>Generous support for this <em>All the Difference</em> College Bound Students Handbook is made possible by the National Black Programming Consortium, American Graduate: Let's Make It Happen sponsored by the Corporation for Public Broadcasting, Wyncote Foundation, POV, Winthrop Rockefeller Foundation, The Annie E. Casey Foundation, Nomadic Pictures, Outreach Extensions, JWS Media Consulting, and Omari Productions.</p>
+          <section class="row">
+            <p>Generous support for this <em>All the Difference</em> College Bound Students Handbook is made possible by the National Black Programming Consortium, American Graduate: Let's Make It Happen sponsored by the Corporation for Public Broadcasting, Wyncote Foundation, POV, Winthrop Rockefeller Foundation, The Annie E. Casey Foundation, Nomadic Pictures, Outreach Extensions, JWS Media Consulting, and Omari Productions.</p>
+          </section>
         </div>
       </section>
 
@@ -337,7 +326,7 @@ $(function() {
           </div>
         </header>
         <div class="container-fluid">
-          <section id="ch_1/intro" class="row">
+          <section id="ch_1-intro" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-7 col-lg-offset-1">
               <h2 class="section-heading">Expectations About College</h2>
             </div>
@@ -404,7 +393,7 @@ $(function() {
               <p>Now that you have a commitment to go to college, focus on three decisions you need to make to gain admission to a college: decide on which college to attend, how to get there (including financially), and how to prepare to manage your expectations once you are in college. These can make all the difference in the college experience.</p>
             </div>
           </section>
-          <section id="ch_1/thinking" class="row">
+          <section id="ch_1-thinking" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h3 class="section-heading">Topic 1: Thinking about expectations</h3>
 
@@ -475,7 +464,7 @@ $(function() {
               <p>Note how successful people usually acknowledge others who have made all the difference in their lives. Always say, "thank you."</p>
             </div>
           </section>
-          <section id="ch_1/why" class="row">
+          <section id="ch_1-why" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h3 class="section-heading">Topic 2: Why college, which college, and how to get there (Managing expectations with knowledge and planning for college)</h3>
 
@@ -609,7 +598,7 @@ $(function() {
               <p>Now that you're thinking about your own essay, you may want to see some examples of successful essays that helped students to enter top-notch schools like Harvard, Yale, Stanford, University of California at Berkeley, the University of Pennsylvania and others. You can also find examples of essays for the Common Application. Visit <a href="http://www.apstudynotes.org/essays/">College Admissions Essays</a>.</p>
             </div>
           </section>
-          <section id="ch_1/financing" class="row">
+          <section id="ch_1-financing" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h3 class="section-heading">Topic 3: Financing college</h3>
 
@@ -703,7 +692,7 @@ $(function() {
               </ul>
             </div>
           </section>
-          <section id="ch_1/resources" class="row">
+          <section id="ch_1-resources" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 resources">
               <h2 class="section-heading">Resources</h2>
               <ul class="list-unstyled">
@@ -819,7 +808,7 @@ $(function() {
           </div>
         </header>
         <div class="container-fluid">
-          <section id="ch_2/intro" class="row">
+          <section id="ch_2-intro" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h2 class="section-heading">Career Paths and Academic Majors</h2>
             </div>
@@ -836,7 +825,7 @@ $(function() {
               <p>Building skills and gaining knowledge through the right set of courses can make all the difference in your experience of college and launching a career.</p>
             </div>
           </section>
-          <section id="ch_2/career" class="row">
+          <section id="ch_2-career" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h3 class="section-heading">Topic 1: Career paths and expectations</h3>
               <p><strong>Hands-On Problem-Solving Activity: Make four lists</strong></p>
@@ -894,7 +883,7 @@ $(function() {
               <p><strong>Suggestion:</strong> Describe what you know about the careers you are considering. Do you know people who are employed in those fields? Talk to them about their work. How did they learn about the existence of their fields? What ideas can they share about the course of study that helped them to work in that field? <img src="img/pencil.png" alt="pencil" class="pencil"> </p> 
             </div>
           </section>
-          <section id="ch_2/academic" class="row">
+          <section id="ch_2-academic" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h3 class="section-heading">Topic 2: Academic majors and career goals</h3>
 
@@ -986,7 +975,7 @@ $(function() {
               <p>It will help to understand that most people's lives are not a straight line and that what will be important will be big skills like writing and thinking that will carry you through many jobs and careers over a lifetime.</p>
             </div>
           </section>
-          <section id="ch_2/resources" class="row">
+          <section id="ch_2-resources" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 resources">
               <h2 class="section-heading">Resources</h2>
               <ul class="list-unstyled">
@@ -1033,7 +1022,7 @@ $(function() {
           </div>
         </header>
         <div class="container-fluid">
-          <section id="ch_3/intro" class="row">
+          <section id="ch_3-intro" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h2 class="section-heading">Networks, Relationships, and Resources</h2>
             </div>
@@ -1050,7 +1039,7 @@ $(function() {
             </div>
           </section>
 
-          <section id="ch_3/networking" class="row">
+          <section id="ch_3-networking" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h3 class="section-heading">Topic 1: Networking</h3>
               <p>One of the key aspects of networking is knowing how to get started. You can start a conversation with something as simple as a comment on the weather and then introduce yourself. Depending on the person you are talking to and the situation you may then want to launch into what is called an "elevator speech" &mdash; what you could say about yourself between the first and 25<sup>th</sup> floor of an elevator ride. You always want to be prepared, whether you meet someone at an event at your school or on the check-out line at a grocery store, to tell your story to someone who might be helpful. Maybe they can help you get into college, obtain a job interview, or help you learn more about a career that interests you. However <em>always</em> remember to ask the other person about themselves. That will impress them the most!</p>
@@ -1121,7 +1110,7 @@ $(function() {
             </div>
           </section>
 
-          <section id="ch_3/fear" class="row">
+          <section id="ch_3-fear" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h3 class="section-heading">Topic 2: Fear of asking for help</h3>
               <p><strong>Information:</strong> Fears can keep you from building needed relationships, so here we address how to face and manage your fears realistically. A key reason for students failing to meet expectations is the fear around seeking help or asking questions. The expectations themselves become a barrier. If a person believes himself or herself to be "just fine," then why would they need to get help or guidance from someone else? Those of you who have always done well in high school are often surprised to find things in college to be more challenging than you had anticipated. When you receive that first grade below an A or B, you may be too embarrassed to talk to someone and reluctant to ask for help. That might seem, in your mind, to mean that you are not ready for college, when in fact you are ready. Men especially need to make finding support a value.</p>
@@ -1138,7 +1127,7 @@ $(function() {
             </div>
           </section>
 
-          <section id="ch_3/personnel" class="row">
+          <section id="ch_3-personnel" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h3 class="section-heading">Topic 3: High school and college personnel expect questions and requests for help from students</h3>
               <strong>Hands-on Problem-Solving Activity:</strong> 
@@ -1193,7 +1182,7 @@ $(function() {
             </div>
           </section>
 
-          <section id="ch_3/help" class="row">
+          <section id="ch_3-help" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h3 class="section-heading">Topic 4: Getting help from the right people in your school</h3>
               <h4>Hands-On and Problem-Solving Activities:</h4>
@@ -1253,7 +1242,7 @@ $(function() {
             </div>
           </section>
 
-          <section id="ch_3/resources" class="row">
+          <section id="ch_3-resources" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 resources">
               <h2 class="section-heading">Resources</h2>
               <ul class="list-unstyled">
@@ -1303,7 +1292,7 @@ $(function() {
           </div>
         </header>
         <div class="container-fluid">
-          <section id="ch_4/intro" class="row">
+          <section id="ch_4-intro" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h2 class="section-heading">Slips, Stumbles, and Getting Up Again</h2>
             </div>
@@ -1320,7 +1309,7 @@ $(function() {
             </div>
           </section>
 
-          <section id="ch_4/mistakes" class="row">
+          <section id="ch_4-mistakes" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h3 class="section-heading">Topic 1: Making mistakes</h3>
               <p>Can you remember maybe an end-of-year scenario when you felt pressure to get everything done &mdash; classes, exams, papers, and even partying? It was easy for some things to become lost in the shuffle. Mistakes were made or mistakes made earlier began to show their consequences. Which scenarios describe what you left undone: classes you did not attend, homework you did not do, forgetting to take a course prerequisite, waiting too late to study for final exams, or rushing to complete a paper or project? Did these situations make you fearful you could undo your high school graduation or college career? Even worse, as the mistake grows larger in your mind, it may seem to threaten your entire life! Some crises are real and dire and some are more manageable. As suggested earlier, when you think through the consequences in realistic terms things can seem easier to handle than our wild and crazy imaginations might suggest to us.</p>
@@ -1371,7 +1360,7 @@ $(function() {
             </div>
           </section>
 
-          <section id="ch_4/crises" class="row">
+          <section id="ch_4-crises" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h3 class="section-heading">Topic 2: Managing crises</h3>
               <p><strong>Information:</strong> No student is ever fully prepared for college life &mdash; and this can be a root cause of all types of crises. Krishaun acknowledges that he is not sure he can even get up in the morning without his mother waking him. Sometimes the fear of college even stands in the way of finishing high school. Our fears can stop our dreams. Listsome of the comforts of home or differences between high school and college life that you think could be tough for you to handle &mdash; for example, not having scheduled assignments every day, making new friends, or having to be a self-starter). <img src="img/pencil.png" alt="pencil" class="pencil">  Now, listsome resources available at college that can offset these challenges, e.g., orientations, roommates, time management workshops, and clubs. <img src="img/pencil.png" alt="pencil" class="pencil"> </p> 
@@ -1543,7 +1532,7 @@ $(function() {
             </div>
           </section>
 
-          <section id="ch_4/resources" class="row">
+          <section id="ch_4-resources" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 resources">
               <h2 class="section-heading">Resources</h2>
               <ul class="list-unstyled">
@@ -1581,7 +1570,7 @@ $(function() {
           </div>
         </header>
         <div class="container-fluid">
-          <section id="ch_5/intro" class="row">
+          <section id="ch_5-intro" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h2 class="section-heading">Managing Time and Studying Smart</h2>
             </div>
@@ -1592,7 +1581,7 @@ $(function() {
             </div>
           </section>
 
-          <section id="ch_5/time" class="row">
+          <section id="ch_5-time" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h3 class="section-heading">Topic 1: Managing time</h3>
               <p><strong>Hands-On Problem-Solving Activity:</strong> How do you think college is or will be different from high school? <strong>Make a list</strong>. <img src="img/pencil.png" alt="pencil" class="pencil">  Your information can come from friends, family, or media. Think about studying, coursework, extracurricular activities, and social activities. Write a goal and assign a priority to each item on your list. <img src="img/pencil.png" alt="pencil" class="pencil">  They say that when you write down a goal, it becomes real and increases the chances you will achieve it. Put this list where you can see it. It may get you through high school and then through college.</p>
@@ -1662,7 +1651,7 @@ $(function() {
             </div>
           </section>
 
-          <section id="ch_5/reading" class="row">
+          <section id="ch_5-reading" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h3 class="section-heading">Topic 2: Reading and studying</h3>
               <p><strong>Hands-On, Problem-Solving Activity:</strong> Ask an older college student for a sample class syllabus and then deconstruct it together, if possible. <img src="img/pencil.png" alt="pencil" class="pencil">  What kinds of tasks do you need to complete and how much study time should you allocate to each task? Study time should include any necessary reading, research, and writing &mdash; as well as preparing for exams. Allow for proofreading, visits to writing or tutoring centers, and meetings with professors or study groups in planning time needed to complete the work. How should you prioritize study tasks based on how grades are weighted, e.g., what percentage is for class participation, homework assignments, research paper, and midterm and final exams? Again be sure to use a planner of some kind to record due dates and study activities. How can you designate different levels of priorities and devise ways to nudge yourself (e.g., reminders or alarms in a smart phone)? Get ideas from some of the student tips above. <img src="img/pencil.png" alt="pencil" class="pencil">  </p>
@@ -1746,7 +1735,7 @@ $(function() {
             </div>
           </section>
 
-          <section id="ch_5/resources" class="row">
+          <section id="ch_5-resources" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 resources">
               <h2 class="section-heading">Resources</h2>
               <ul class="list-unstyled">
@@ -1783,7 +1772,7 @@ $(function() {
           </div>
         </header>
         <div class="container-fluid">
-          <section id="ch_6/intro" class="row">
+          <section id="ch_6-intro" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h2 class="section-heading">Getting to the Endgame</h2>
             </div>
@@ -1796,7 +1785,7 @@ $(function() {
             </div>
           </section>
 
-          <section id="ch_6/flexible" class="row">
+          <section id="ch_6-flexible" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h3 class="section-heading">Topic 1: Managing change and being flexible</h3>
               <p><strong>Hands-On and Problem-Solving Activity:</strong> It is important to remember that what you are seeking is just the first job out of college. Most people usually change jobs or companies a few times during the course of their lives. Too many things can happen or change over the fifty or so years that one is typically in the workplace. Think about the following "change" scenarios:</p>
@@ -1837,7 +1826,7 @@ $(function() {
             </div>
           </section>
 
-          <section id="ch_6/prepare" class="row">
+          <section id="ch_6-prepare" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h3 class="section-heading">Topic 2: Preparing for and applying for a job</h3>
               <p><strong>Hands-On Problem-Solving Activity:</strong> <strong>Make a list</strong> of <u>every</u> job, internship, sport, or volunteer activity you have had since 9<sup>th</sup> grade. Add any awards or special recognition including academics and leadership.</p>
@@ -1977,7 +1966,7 @@ $(function() {
             </div>
           </section>
 
-          <section id="ch_6/job" class="row">
+          <section id="ch_6-job" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h3 class="section-heading">Topic 3: Job or graduate/professional school</h3>
               <p>As part of your college experience you will make the decision whether to seek employment immediately following your undergraduate degree or to continue your education. Finances, scholarly ability, interest, and the skill/degree requirement of your career field of interest will help you make that choice. Having a mentor in your chosen field may boost your chances for acceptance in a graduate program. Senior year may place pressure on you when you feel you need to search for a job in addition to applying to a graduate program.</p>
@@ -2025,7 +2014,7 @@ $(function() {
             </div>
           </section>
 
-          <section id="ch_6/life" class="row">
+          <section id="ch_6-life" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
               <h3 class="section-heading">Topic 4: Affording Your New Life</h3>
               <p>No matter how much you are going to earn, you should have a plan. It can lead you to your goals and keep you out of financial trouble.</p>
@@ -2095,7 +2084,7 @@ $(function() {
             </div>
           </section>
 
-          <section id="ch_6/resources" class="row">
+          <section id="ch_6-resources" class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 resources">
               <h2 class="section-heading">Resources</h2>
               <ul class="list-unstyled">

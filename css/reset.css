@@ -1,0 +1,46 @@
+html, body{
+  height: 100%;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  color: #404040;
+  overflow: hidden;
+}
+p {
+  line-height: 1.5;
+  margin: 30px 0;
+}
+p a {
+  text-decoration: underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+}
+a {
+  color: #404040;
+}
+a:hover,
+a:focus {
+  color: #0085a1;
+}
+a img:hover,
+a img:focus {
+  cursor: zoom-in;
+}
+blockquote {
+  margin-top: 25px;
+  font-family: 'old standard tt', Helvetica, sans-serif;
+  font-size: 20px;
+}
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 4px;
+  border-color: white;
+}
