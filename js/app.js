@@ -30,6 +30,7 @@ function scrollSpy(){
     var windowPos = $('#page-content-wrapper').scrollTop();
     var docHeight = $('body').height()/2;
 
+
     for (var i=0; i < aArray.length; i++) {
       var theID = aArray[i];
       var selecter = "a[href='" + theID + "']";
@@ -37,7 +38,12 @@ function scrollSpy(){
       if($(theID).length){
         var divPos = $(theID).offset().top; // get the offset of the div from the top of page
         var divHeight = $(theID).height(); // get the height of the div in question
-
+        if(divPos<0){
+          $(theID+' .intro-header').css({'background-position-y': Math.abs(parseInt(divPos/10))+'px'});  
+        }else{
+          $(theID+' .intro-header').css({'background-position-y': '0px'});
+        }
+        
         if (divPos <= docHeight && docHeight < (divPos + divHeight)) {
           $(selecter).addClass("active");
         } else {
