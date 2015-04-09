@@ -65,12 +65,9 @@
     margin-left: 20px;
   
     margin-bottom: 0;
-}
+  }
 }
 
-#page-content-wrapper{
-  transform-style: preserve-3d;
-  }
 
 /* Main page stye */
 @media(min-width: 768px) {

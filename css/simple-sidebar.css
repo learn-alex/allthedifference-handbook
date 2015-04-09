@@ -1,7 +1,6 @@
 
 #wrapper,
 #sidebar-wrapper,
-#page-cover,
 #page-content-wrapper,
 #menu-button,
 #menu-button #brand {
@@ -15,6 +14,7 @@
   z-index: 0;
   position: relative;
   height: 100%;
+  overflow: hidden;
 }
 
 
@@ -31,6 +31,10 @@
   position: absolute;
   width: 0%;
   height: 0%;
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+  transition: background-color 1s ease;
 }
 
 
@@ -57,7 +61,8 @@ body.overflow{
   right: -250px;
   width: 100%;
   height: 100%;
-  background-color: rgba(255,255,255,0);
+  background-color: rgba(255,255,255,0.5);
+  overflow: hidden;
 }
 #wrapper.toggled #page-content-wrapper{
   left: 250px;
