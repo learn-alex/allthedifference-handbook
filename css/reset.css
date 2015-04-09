@@ -9,7 +9,6 @@ body {
   color: #404040;
   font-size: 16px;
   font-weight: 400;
-  font-family: 'Montserrat', Helvetica, sans-serif;
   font-family: Roboto, Halvetica, sans-serif;
 }
 *{
@@ -64,7 +63,7 @@ a img:focus {
 }
 blockquote {
   margin-top: 25px;
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: Roboto, Helvetica, sans-serif;
   font-size: 20px;
   background-color: #ffecb3;
   border-color: #000;
