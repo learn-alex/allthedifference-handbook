@@ -1,6 +1,7 @@
 $(function() {
   menuToggle();
   scrollSpy();
+  showTooltip();
   cssLoaders(); // init the css loaders
 });
 
@@ -17,6 +18,15 @@ function menuToggle(){
     $("body").removeClass("overflow");
     //$('#page-content-wrapper').scrollTo(this.hash, this.hash); 
   });
+}
+
+// show tooltip
+function showTooltip(){
+  // add tooltip to class
+  $('.highlight').attr({"data-toggle": "tooltip", "data-placement": "auto top", "title": "Pay attention to highlighted words and build your vocabulary!"});
+  $('.pencil').attr({"data-toggle": "tooltip", "data-placement": "auto top", "title": "Each activity with this pencil is worth 10 points. Keep track of your points and add up your score."});
+  // init tooltip
+  $('[data-toggle="tooltip"]').tooltip();
 }
 
 // Spy on the scroll
