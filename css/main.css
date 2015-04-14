@@ -24,6 +24,46 @@
   margin: 30px 25px 0px 0px;
 }
 
+/* Loaders.css */
+.loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, 0%, 0);
+    width: 50px;
+    height: 50px;
+    /* background: tomato; */
+}
+.loader-inner{
+}
+.loader-inner > div{
+  /* background-color: #F7AE02; */
+  border: 2px solid #F7AE02;
+  color: #F7AE02;
+}
+
+/* Bootstrap tolltip */
+.tooltip{
+  font-size: 100%;
+}
+.tooltip .tooltip-inner{
+  background-color: #F7AE02;
+  color: #000;
+  box-shadow: 2px 2px 1px;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: #F7AE02;
+}
+.tooltip.right .tooltip-arrow {
+  border-right-color: #F7AE02;
+}
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #F7AE02;
+}
+.tooltip.left .tooltip-arrow {
+  border-left-color: #F7AE02;
+}
+
 .text-around-image-left,
 .text-around-image-right{
   display: block;

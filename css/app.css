@@ -6,6 +6,10 @@
 @import url('http://fonts.googleapis.com/css?family=Paytone+One:400');
 
 /* Import all the styles */
+/* Plugins styles */
 @import 'reset.css';
+@import 'loaders.min.css';
+
+/* App styles */
 @import 'nav.css';
 @import 'main.css';

@@ -1,8 +1,11 @@
 $(function() {
   menuToggle();
   scrollSpy();
+  showTooltip();
+  cssLoaders(); // init the css loaders
 });
 
+// show menu for mobile user
 function menuToggle(){
   $("#menu-toggle, #page-cover").click(function(e) {
     e.preventDefault();
@@ -17,6 +20,16 @@ function menuToggle(){
   });
 }
 
+// show tooltip
+function showTooltip(){
+  // add tooltip to class
+  $('.highlight').attr({"data-toggle": "tooltip", "data-placement": "auto top", "title": "Pay attention to highlighted words and build your vocabulary!"});
+  $('.pencil').attr({"data-toggle": "tooltip", "data-placement": "auto top", "title": "Each activity with this pencil is worth 10 points. Keep track of your points and add up your score."});
+  // init tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+}
+
+// Spy on the scroll
 function scrollSpy(){
   var aChildren = $("#navbar li>a"); // find the a children of the list items
   var navLinks = []; // create the empty navLinks
@@ -36,8 +49,12 @@ function scrollSpy(){
     var src = $(iframeElement).attr('data-src');
     $(iframeElement).attr({'id': 'video-'+(i+1), "src" : "about:blank"});
     iframes.push({"src": src, "id": 'video-'+(i+1)});
+
+    // Add loader content for iFrame
+    $(iframeElement).parent().prepend('<div class="loader"><div class="loader-inner ball-scale-ripple-multiple"></div></div>');
   };
 
+  // scrollSpy on the page-content-wrapper
   $('#page-content-wrapper').scroll(function(){
     var windowPos = $('#page-content-wrapper').scrollTop();
     var docHeight = $('body').height()/2;
