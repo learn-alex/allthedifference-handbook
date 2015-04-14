@@ -24,6 +24,27 @@
   border-radius: 50%;
 }
 
+/* Loaders.css */
+.loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, 0%, 0);
+    width: 50px;
+    height: 50px;
+    /* background: tomato; */
+}
+.loader-inner{
+}
+.loader-inner > div{
+  /* background-color: #F7AE02; */
+  border: 2px solid #F7AE02;
+  color: #F7AE02;
+}
+iframe{
+  display: none;
+}
+
 .text-around-image-left,
 .text-around-image-right{
   display: block;
