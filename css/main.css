@@ -81,8 +81,8 @@
   .text-around-image-left.circle,
   .text-around-image-right.circle{
     border-radius: 50%;
-    -webkit-shape-outside:circle();
-    shape-outside:circle();
+    -webkit-shape-outside: circle(50%);
+    shape-outside: circle(50%);
   
     width: 250px;
 }
