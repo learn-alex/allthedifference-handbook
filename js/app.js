@@ -107,17 +107,25 @@ function scrollSpy(){
 function highlightNav(){
   $('ul#navbar a').on('click', function(){
     var allLinks = $('ul#navbar a');
+
+    // Remove class active from all nav elems 
     allLinks.removeClass('active');
-    $(this).addClass('active');
     addActiveToNestedElems($(this));
   });
 }
 
 function addActiveToNestedElems(elem){
+  // This funciton will highlight all parent navigation of the clicked element. 
+
   var end = false;
   while(!end){
+    // Add class active to the current nav elem
     elem.addClass('active');
+
+    // If the current nav elem is a nav header, break the loop
     if (elem.closest('ul').attr('id') == 'navbar'){ end = true; }
+
+    // Otherwise, traverse up the nav bar to the parent elem of the clicked elem. Set 'elem' to that element. 
     elem = elem.closest('ul').closest('li').children('a').first();
   }
 }
