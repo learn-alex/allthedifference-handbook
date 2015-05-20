@@ -2,6 +2,7 @@ $(function() {
   menuToggle();
   scrollSpy();
   showTooltip();
+  highlightNav();
   cssLoaders(); // init the css loaders
 });
 
@@ -64,8 +65,6 @@ function scrollSpy(){
       var theID = navLinks[i];
       var selecter = "a[href='" + theID + "']";
 
-      console.log(selecter)
-
       if($(theID).length){
         var divPos = $(theID).offset().top; // get the offset of the div from the top of page
         var divHeight = $(theID).height(); // get the height of the div in question
@@ -75,11 +74,11 @@ function scrollSpy(){
           $(theID+' .intro-header').css({'background-position-y': '0px'});
         }
         
-        if (divPos <= docHeight && docHeight < (divPos + divHeight)) {
-          $(selecter).addClass("active");
-        } else {
-          $(selecter).removeClass("active");
-        }
+        // if (divPos <= docHeight && docHeight < (divPos + divHeight)) {
+        //   $(selecter).addClass("active");
+        // } else {
+        //   $(selecter).removeClass("active");
+        // }
 
         // scroll the nav
         $('#navbar').scrollTop(windowPos/100);
@@ -103,6 +102,22 @@ function scrollSpy(){
     };
     // Lazyload END
   });
+}
 
-console.log(navLinks)
+function highlightNav(){
+  $('ul#navbar a').on('click', function(){
+    var allLinks = $('ul#navbar a');
+    allLinks.removeClass('active');
+    $(this).addClass('active');
+    addActiveToNestedElems($(this));
+  });
+}
+
+function addActiveToNestedElems(elem){
+  var end = false;
+  while(!end){
+    elem.addClass('active');
+    if (elem.closest('ul').attr('id') == 'navbar'){ end = true; }
+    elem = elem.closest('ul').closest('li').children('a').first();
+  }
 }
