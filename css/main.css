@@ -380,3 +380,11 @@ h4{
   font-weight: normal;
   margin-top: -10px;
 }
+
+#navbar ul ul.list-unstyled {
+  border-bottom: none;
+}
+
+#navbar ul ul.list-unstyled a {
+  padding-left: 40px;
+}
