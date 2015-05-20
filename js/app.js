@@ -64,6 +64,8 @@ function scrollSpy(){
       var theID = navLinks[i];
       var selecter = "a[href='" + theID + "']";
 
+      console.log(selecter)
+
       if($(theID).length){
         var divPos = $(theID).offset().top; // get the offset of the div from the top of page
         var divHeight = $(theID).height(); // get the height of the div in question
@@ -101,4 +103,6 @@ function scrollSpy(){
     };
     // Lazyload END
   });
+
+console.log(navLinks)
 }
