@@ -59,9 +59,10 @@ function scrollSpy(){
   $('#page-content-wrapper').scroll(function(){
     var windowPos = $('#page-content-wrapper').scrollTop();
     var docHeight = $('body').height()/2;
+    var i;
 
     // navSpy highlighting the nav as page scroll
-    for (var i=0; i < navLinks.length; i++) {
+    for (i = 0; i < navLinks.length; i++) {
       var theID = navLinks[i];
       var selecter = "a[href='" + theID + "']";
 
@@ -88,7 +89,7 @@ function scrollSpy(){
 
     // lazyload the video
     docHeight = $('body').height();
-    for (var i = 0; i < iframes.length; i++) {
+    for (i = 0; i < iframes.length; i++) {
       var iframe = iframes[i];
       var selecter = "#"+iframe.id;
 
@@ -99,7 +100,7 @@ function scrollSpy(){
           $(selecter).addClass("lazyload").attr('src', iframe.src).removeAttr('data-src');
         }
       }
-    };
+    }
     // Lazyload END
   });
 }
@@ -137,7 +138,6 @@ function addActiveToNestedElems(elem){
 
 function unfoldNav(){
   $('ul#navbar .nav-sub1 li').on('click', function(){
-    // $(this).addClass("fast");
-    $(this).children('ul').slideToggle('slow');
+    $(this).children('ul').toggle();
   });
 }
