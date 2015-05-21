@@ -50,12 +50,6 @@
   ga('send', 'pageview');
 </script>
 
-<script>
-//Tooltip
- $(function() {
-    $(document).tooltip();
-  });
-</script>
 </head>
 
 <body>
@@ -64,10 +58,10 @@
   <aside id="sidebar-wrapper">
     <div id="sidebar-brand"><a href="#home"><em>All the Difference</em> College Bound Student Handbook</a></div>
     <div class="navbar-wrap">
-      <ul id="navbar" class="sidebar-nav">
+      <ul id="navbar" class="sidebar-nav nav-main">
         <li>
           <a href="#intro">Introduction</a>
-          <ul class="list-unstyled">
+          <ul class="list-unstyled nav-sub1">
             <li><a href="#intro-purpose">Purpose</a></li>
             <li><a href="#intro-background">Background</a></li>
             <li><a href="#intro-story">Robert and Krishaun's Stories</a></li>
@@ -80,65 +74,176 @@
         </li>
         <li>
           <a href="#ch_1">Chapter One: Expectations About College</a>
-          <ul class="list-unstyled">
+          <ul class="list-unstyled nav-sub1">
             <!--<li><a href="#ch_1-intro">Expectations About College</a></li>-->
-            <li><a href="#ch_1-thinking">Topic 1: Thinking about expectations</a></li>
-            <li><a href="#ch_1-why">Topic 2: Why college, which college, and how to get there</a></li>
-            <li><a href="#ch_1-financing">Topic 3: Financing college</a></li>
+            <li><a href="#creed">Urban Prep Creed</a></li>
+            <li>
+              <a href="#ch_1-thinking" class="unfold">Topic 1: Thinking about expectations</a>
+              <ul class="list-unstyled nav-sub2">
+                <li><a href="#ch_1_topic_1-communities">Supportive families and communities</a></li>
+                <li><a href="#ch_1_topic_1-examples">The power of examples</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#ch_1-why">Topic 2: Why college, which college, and how to get there</a>
+              <ul class="list-unstyled nav-sub2">
+                <li><a href="#ch_1_topic_2-choosing">Choosing the right college</a></li>
+                <li><a href="#ch_1_topic_2-styles">Student Learning Styles</a></li>
+                <li><a href="#ch_1_topic_2-degrees">College Degrees</a></li>
+              </ul>
+            </li>
+            <li><a href="#ch_1-essay">Topic 3: Writing the essay for your college application</a></li>
+            <li><a href="#ch_1-financing">Topic 4: Financing college</a>
+              <ul class="list-unstyled nav-sub2">
+                <li><a href="#ch_1_topic_4-costs">Sticker price and actual costs</a></li>
+                <li><a href="#ch_1_topic_4-accredited">Accredited Colleges</a></li>
+              </ul>
+            </li>
             <li class="divider"></li>
             <li><a href="#ch_1-resources">Resources</a></li>
           </ul>
         </li>
         <li>
           <a href="#ch_2">Chapter Two: Career Paths and Academic Majors</a>
-          <ul class="list-unstyled">
+          <ul class="list-unstyled nav-sub1">
             <!--<li><a href="#ch_2-intro">Career Paths and Academic Majors</a></li>-->
-            <li><a href="#ch_2-career">Topic 1: Career paths and expectations</a></li>
-            <li><a href="#ch_2-academic">Topic 2: Academic majors and career goals</a></li>
+            <li>
+              <a href="#ch_2-career">Topic 1: Career paths and expectations</a>
+              <ul class="list-unstyled nav-sub2">
+                <li><a href="#ch_2_topic_1-change">Changing majors and career direction</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#ch_2-academic">Topic 2: Academic majors and career goals</a>
+              <ul class="list-unstyled nav-sub2">
+                <li><a href="#ch_2_topic_2-libarts">Liberal Arts Course of Study</a></li>
+                <li><a href="#ch_2_topic_2-goals">Realistic goals</a></li>
+                <li><a href="#ch_2_topic_2-research">Researching companies and jobs</a></li>
+              </ul>
+            </li>
             <li class="divider"></li>
             <li><a href="#ch_2-resources">Resources</a></li>
           </ul>
         </li>
         <li>
           <a href="#ch_3">Chapter Three: Networks, Relationships, and Resources</a>
-          <ul class="list-unstyled">
+          <ul class="list-unstyled nav-sub1">
             <!--<li><a href="#ch_3-intro">Networks, Relationships, and Resources</a></li>-->
-            <li><a href="#ch_3-networking">Topic 1: Networking</a></li>
+            <li><a href="#ch_3-networking">Topic 1: Networking</a>
+              <ul class="list-unstyled nav-sub2">
+                <li><a href="#ch_3_topic_1-network">Building a strong network</a></li>
+                <li><a href="#ch_3_topic_1-ask">Ask others about their networks</a></li>
+              </ul>
+            </li>
             <li><a href="#ch_3-fear">Topic 2: Fear of asking for help</a></li>
-            <li><a href="#ch_3-personnel">Topic 3: High school and college personnel expect questions and requests for help from students</a></li>
-            <li><a href="#ch_3-help">Topic 4: Getting help from the right people in your school</a></li>
+            <li>
+              <a href="#ch_3-personnel">Topic 3: High school and college personnel expect questions and requests for help from students</a>
+              <ul class="list-unstyled nav-sub2">
+                <li><a href="#ch_3_topic_3-help">Getting help is a life skill</a></li>
+                <li><a href="#ch_3_topic_3-faculty">Get to know faculty and ask questions</a></li>
+                <li><a href="#ch_3_topic_3-impression">Create a positive impression</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#ch_3-help">Topic 4: Getting help from the right people in your school</a>
+              <ul class="list-unstyled nav-sub2">
+                <li><a href="#ch_3_topic_4-admin">College Administrative Hierarchy</a></li>
+              </ul>
+            </li>
             <li class="divider"></li>
             <li><a href="#ch_3-resources">Resources</a></li>
           </ul>
         </li>
         <li>
           <a href="#ch_4">Chapter Four: Slips, Stumbles, and Getting Up Again</a>
-          <ul class="list-unstyled">
+          <ul class="list-unstyled nav-sub1">
             <!--<li><a href="#ch_4-intro">Slips, Stumbles, and Getting Up Again</a></li>-->
-            <li><a href="#ch_4-mistakes">Topic 1: Making mistakes</a></li>
-            <li><a href="#ch_4-crises">Topic 2: Managing crises</a></li>
+            <li>
+              <a href="#ch_4-mistakes">Topic 1: Making mistakes</a>
+              <ul class="list-unstyled nav-sub2">
+                <li><a href="#ch_4_topic_1-crossroads">Making the right decision at a crossroads in your life</a></li>
+                <li><a href="#ch_4_topic_1-consequences">Understanding consequences and focusing on academic success</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#ch_4-crises">Topic 2: Managing crises</a>
+              <ul class="list-unstyled nav-sub2">
+                <li><a href="#ch_4_topic_2-emotional">Personal/Emotional</a></li>
+                <li><a href="#ch_4_topic_2-race">Race and Class</a></li>
+                <li><a href="#ch_4_topic_2-stereotypes">Not allowing stereotypes to derail you</a></li>
+                <li><a href="#ch_4_topic_2-diversity">Knowing how to embrace diversity</a></li>
+                <li><a href="#ch_4_topic_2-social">Social Life and Supports</a></li>
+                <li><a href="#ch_4_topic_2-sex">Abstinence or practicing safe sex</a></li>
+                <li><a href="#ch_4_topic_2-crises">Academic Crises</a></li>
+                <li><a href="#ch_4_topic_2-resilient">Learning how to be resilient</a></li>
+                <li><a href="#ch_4_topic_2-health">Health and Wellness</a></li>
+                <li><a href="#ch_4_topic_2-stress">Coping with stress</a></li>
+                <li><a href="#ch_4_topic_2-risk">High-Risk Behaviors</a></li>
+              </ul>
+            </li>
             <li class="divider"></li>
             <li><a href="#ch_4-resources">Resources</a></li>
           </ul>
         </li>
         <li>
           <a href="#ch_5">Chapter Five: Managing Time and Studying Smart</a>
-          <ul class="list-unstyled">
+          <ul class="list-unstyled nav-sub1">
             <!--<li><a href="#ch_5-intro">Managing Time and Studying Smart</a></li>-->
-            <li><a href="#ch_5-time">Topic 1: Managing time</a></li>
-            <li><a href="#ch_5-reading">Topic 2: Reading and studying</a></li>
+            <li><a href="#ch_5-time">Topic 1: Managing time</a>
+              <ul class="list-unstyled nav-sub2">
+                <li><a href="#ch_5_topic_1-diff">College Is Different from High School</a></li>
+                <li><a href="#ch_5_topic_1-priorities">Setting Priorities</a></li>
+                <li><a href="#ch_5_topic_1-planning">Planning</a></li>
+                <li><a href="#ch_5_topic_1-time">Strategies to Manage Time</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#ch_5-reading">Topic 2: Reading and studying</a>
+              <ul class="list-unstyled nav-sub2">
+                <li><a href="#ch_5_topic_2-help">Getting help from faculty</a></li>
+                <li><a href="#ch_5_topic_2-reading">Reading Is an Essential Skill</a></li>
+                <li><a href="#ch_5_topic_2-money">Saving Money on Books and Materials</a></li>
+                <li><a href="#ch_5_topic_2-study">Study Groups</a></li>
+              </ul>
+            </li>
             <li class="divider"></li>
             <li><a href="#ch_5-resources">Resources</a></li>
           </ul>
         </li>
         <li>
           <a href="#ch_6">Chapter Six: Getting to the Endgame</a>
-          <ul class="list-unstyled">
+          <ul class="list-unstyled nav-sub1">
             <!--<li><a href="#ch_6-intro">Getting to the Endgame</a></li>-->
-            <li><a href="#ch_6-flexible">Topic 1: Managing change and being flexible</a></li>
-            <li><a href="#ch_6-prepare">Topic 2: Preparing for and applying for a job</a></li>
-            <li><a href="#ch_6-job">Topic 3: Job or graduate/professional school</a></li>
-            <li><a href="#ch_6-life">Topic 4: Affording Your New Life</a></li>
+            <li>
+              <a href="#ch_6-flexible">Topic 1: Managing change and being flexible</a>
+              <ul class="list-unstyled nav-sub2">
+                <li><a href="#ch_6_topic_1-networks">Maximizing your networks</a></li>
+                <li><a href="#ch_6_topic_1-give">Being a man who gives to others</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#ch_6-prepare">Topic 2: Preparing for and applying for a job</a>
+              <ul class="list-unstyled nav-sub2">
+                <li><a href="#ch_6_topic_2-center">Connecting to the career center</a></li>
+                <li><a href="#ch_6_topic_2-office">The Career Office</a></li>
+                <li><a href="#ch_6_topic_2-offer">Understanding the job offer</a></li>
+                <li><a href="#ch_6_topic_2-search">The Job Search Process</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#ch_6-job">Topic 3: Job or graduate/professional school</a>
+              <ul class="list-unstyled nav-sub2">
+                <li><a href="#ch_6_topic_3-checklist">Checklist for applying to graduate or professional school</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#ch_6-life">Topic 4: Affording Your New Life</a>
+              <ul class="list-unstyled nav-sub2">
+                <li><a href="#ch_6_topic_4-father">Learning how to be a responsible father</a></li>
+                <li><a href="#ch_6_topic_4-expenses">Expenses</a></li>
+                <li><a href="#ch_6_topic_4-skills">Using Learned Skills and Developing New Skills</a></li>
+              </ul>
+            </li>
             <li class="divider"></li>
             <li><a href="#ch_6-resources">Resources</a></li>
           </ul>
@@ -349,8 +454,8 @@
               </div>
               <p class="quote">How you deal with where you live can make all the difference.</p>
             </div>
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-3 sidebar">
-              <h4 id="creed">Urban Prep Creed</h4>
+            <div id="creed" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-3 sidebar">
+              <h4>Urban Prep Creed</h4>
               <ul class="list-unstyled">
                 <li>We are the young men of Urban Prep.</li>
                 <li>We are college bound.</li>
@@ -433,7 +538,7 @@
                 <iframe class="embed-responsive-item" data-src='http://video.pbs.org/partnerplayer/ygmcPol34uPpI6g1K7fJJQ%3D%3D/?autoplay=false&start=0&end=0&chapterbar=false&topbar=false&endscreen=true'></iframe>
               </div>
 
-              <p class="quote">Supportive families and communities can make all the difference.</p>
+              <p id="ch_1_topic_1-communities" class="quote">Supportive families and communities can make all the difference.</p>
 
               <blockquote><strong>Questions:</strong> What makes you think that Krishaun will succeed? How do you feel about your own upcoming high school graduation or other moments of success? What do those times represent for you and your family members? How have they made a difference to what you have done or how good you feel?</blockquote>
 
@@ -471,7 +576,7 @@
 
               <blockquote><strong>Questions: </strong>What advice given by MarQo is something you would like to try? What are the advantages to having different kinds of role models &mdash; older family members or young black men who may be only a year or two ahead of you in school? What other kinds of role models have you found to be useful? What new ideas do you have to find people who can help you to achieve your dreams?</blockquote>
 
-              <p><strong>Find stories of others who have succeeded</strong> despite challenging odds or who have defied low expectations. Some may be in your family or community such as a relative, faith leader, or coach. Some may be public figures who have met their own challenges along the way. A starting place for stories is the wonderful documentary <a href="http://www.hbo.com/documentaries/the-black-list-volume-one/synopsis.html" target="_blank"><em>Black List: Volume 1</em></a> that was directed by Timothy Greenfield-Sanders and Elvis Mitchell. <img src="img/pencil.png" alt="pencil" class="pencil"> This 92-minute documentary, which premiered on HBO in 2008, uses the personal stories of accomplished African Americans in fields as varied as business, entertainment, literature, sports, and the media to comment on the social, political, and economic progress black Americans have made in the past 50 years. It won the 2009 NAACP Spirit Award for Best Documentary.<p>
+              <p id="ch_1_topic_1-examples"><strong>Find stories of others who have succeeded</strong> despite challenging odds or who have defied low expectations. Some may be in your family or community such as a relative, faith leader, or coach. Some may be public figures who have met their own challenges along the way. A starting place for stories is the wonderful documentary <a href="http://www.hbo.com/documentaries/the-black-list-volume-one/synopsis.html" target="_blank"><em>Black List: Volume 1</em></a> that was directed by Timothy Greenfield-Sanders and Elvis Mitchell. <img src="img/pencil.png" alt="pencil" class="pencil"> This 92-minute documentary, which premiered on HBO in 2008, uses the personal stories of accomplished African Americans in fields as varied as business, entertainment, literature, sports, and the media to comment on the social, political, and economic progress black Americans have made in the past 50 years. It won the 2009 NAACP Spirit Award for Best Documentary.<p>
 
               <p>Make or bookmark a list of films or stories that you can view or read when you need inspiration. <img src="img/pencil.png" alt="pencil" class="pencil"> (Hint: see the homework assignment below.)</p>
 
@@ -527,7 +632,7 @@
 
               <p>A key to college success and managing expectations is self-knowledge and the assurance that students are in the right schools that fit their learning styles and interests. Self-awareness can make time spent doing research on potential schools, attending college fairs, and visiting schools more effective and productive.</p>
 
-              <p><strong>Read the scenarios below</strong>. Find yourself in these types of students and consider the various options following high school. What sounds like the best fit for you? How else might you describe your goals and learning style? What led you to make the choice(s) you made? <img src="img/pencil.png" alt="pencil" class="pencil"> </p>
+              <p id="ch_1_topic_2-styles"><strong>Read the scenarios below</strong>. Find yourself in these types of students and consider the various options following high school. What sounds like the best fit for you? How else might you describe your goals and learning style? What led you to make the choice(s) you made? <img src="img/pencil.png" alt="pencil" class="pencil"> </p>
 
               <p><strong>Loves Learning.</strong> <em>You love learning and being part of a community in which others do too.</em> That is the first clue that you are college material. You may not have admitted your love to others for fear of being considered geeky, but if in your mind you reveled in the ideas exchanged in your classes, then college could feel as if you're in a big candy store. You will be among many others who feel the way you do, and you'll have access to faculty who can feed your desire to learn and engage in new ideas. Either a small or mid-sized liberal arts college or a large university setting could be right for you.</p>
 
@@ -553,7 +658,7 @@
 
               <blockquote><strong>Questions:</strong> You could fit into more than one category, or you may want to describe yourself in different ways. Which categories do Robert and Krishaun most likely fit into and why? (Clues: Did Robert and Krishaun have clear career goals?)</blockquote>
             </div>
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-7 col-lg-offset-1">
+            <div id="ch_1_topic_2-choosing" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-7 col-lg-offset-1">
               <p><strong>Which college is right for you?</strong> Take a look at the Sidebar on College Degrees to find out more about the kinds of college degrees that are available &mdash; Associate's, Bachelor's, Master's, and beyond. What degree matches your job seeking and career goals &mdash; and what can you afford? Put this information together with what you have already learned about yourself from figuring out what student learning style best describes you. Now you're ready to start thinking about what colleges might work best for you. Think broadly. Make an initial list of colleges to look into. <img src="img/pencil.png" alt="pencil" class="pencil"></p>
 
               <p>Give yourself enough time while you are in high school to find the schools that interest you and that seem to fit your learning style and goals. Here is a list of key activities you can also do in high school to help you get into the college of your choice:</p>
@@ -575,7 +680,7 @@
 
               <p>These are very similar to the skills and activities you will use in college to search for a job and be launched on your career. Get into the habit now.</p></div>
 
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-3 sidebar">
+            <div id="ch_1_topic_2-degrees" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-3 sidebar">
               <h4>College Degrees</h4>
               <p>Types of degrees or programs to consider as you look ahead to schooling after high school graduation.</p>
               <ul class="list-unstyled">
@@ -586,8 +691,12 @@
                 <li>A <strong>Doctorate</strong> is considered a "terminal degree," meaning it is the highest degree you can earn in the field of your choosing. A doctoral degree can be general such as a Doctor of Philosophy (Ph.D.); or specific such as a JD, Juris Doctor (law degree), an MD, Doctor of Medicine, or an Ed.D., Doctor of Education.</li>
               </ul>
             </div>
+          </section>
+          <section id="ch_1-financing" class="row">
             <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-              <p><strong>Information:</strong> Writing the essay for your college application. The steps to being admitted to the college of your choice include completing a college application and writing an essay that will convince them you are the right student for their college.</p>
+              <h3 class="section-heading">Topic 3: Writing the essay for your college application</h3>
+
+              <p id="ch_1-essay"><strong>Information:</strong> Writing the essay for your college application. The steps to being admitted to the college of your choice include completing a college application and writing an essay that will convince them you are the right student for their college.</p>
 
               <p>As you prepare to write the all-important college essays to the schools you've chosen, think about how you see yourself. What are <em>your</em> goals? What have you achieved academically, socially, in sports, and in serving the community? This is one of the places where all those things you have been doing while in high school become important. What obstacles have you overcome? Write these down. Make it comprehensive and then you can select the ideas that work for individual colleges. <img src="img/pencil.png" alt="pencil" class="pencil"></p> 
 
@@ -634,7 +743,7 @@
           </section>
           <section id="ch_1-financing" class="row">
             <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-              <h3 class="section-heading">Topic 3: Financing college</h3>
+              <h3 class="section-heading">Topic 4: Financing college</h3>
 
               <p><strong>Hands-On Problem-Solving Activity:</strong></p>
 
@@ -676,7 +785,7 @@
 
               <p>Taking out credit union loans is a good strategy. Private donors, clubs, and fraternal organizations also offer funds, and some may be available to those without green cards or who are not yet naturalized citizens. Some employers offer tuition support if the schooling relates to a particular job. State and city public college systems are economical for local students and often truly stellar. What is important is to research the various ways that college costs can be reduced and apply to diverse sources.</p>
 
-              <p>You need to know that many students and families also have misconceptions about college costs. Their first thought is that the price they see is what they will pay. The reality is that just like a new car, this is the sticker price. The final cost may ultimately be far less once financial aid is factored in. At the same time, families do not often plan for costs that begin to accrue even in the application process while you are still in high school. These can include application fees, a visit to the campus, and doctor visits for a physical exam or any needed shots (measles vaccine is required). Once accepted by a college you may need:</p>
+              <p id="ch_1_topic_4-costs">You need to know that many students and families also have misconceptions about college costs. Their first thought is that the price they see is what they will pay. The reality is that just like a new car, this is the sticker price. The final cost may ultimately be far less once financial aid is factored in. At the same time, families do not often plan for costs that begin to accrue even in the application process while you are still in high school. These can include application fees, a visit to the campus, and doctor visits for a physical exam or any needed shots (measles vaccine is required). Once accepted by a college you may need:</p>
               <ul class="list-space">
                 <li>New clothes depending on the climate in which the school is located</li>
                 <li>Bedding and other household items for a dorm room</li>
@@ -718,7 +827,7 @@
                 <li>Note whether they are for-profit or nonprofit. You may want to be especially wary of for-profit schools/colleges, and to know their reputations <em>before</em> paying.</li>
               </ul>
             </div>
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-3 sidebar no-margin">
+            <div id="ch_1_topic_4-accredited" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-3 sidebar no-margin">
               <h4><a href="http://ope.ed.gov/accreditation/" target="_blank">Accredited Colleges</a></h4>
               <p>Federal financial aid is given only to schools that meet accreditation standards and students would be wise to focus on these schools. Regional organizations review colleges and universities on a variety of measures, including governance, financial stability, and most important, academic outcomes. According to the U.S. Department of Education, the goal of accreditation is to "assure that institutions of higher education meet acceptable standards of quality." A list of accredited colleges meeting federal standards can be found at <a href="http://ope.ed.gov/accreditation/" target="_blank">the accreditation database</a>.</p>
             </div>
@@ -897,7 +1006,7 @@
 
               <p>Think about when you had a goal and someone helped you find a way to achieve it. What happened? It is important to use advisers and professors for guidance. List teachers, advisers, coaches, family members, or others that you could ask for guidance in Robert's situation. <img src="img/pencil.png" alt="pencil" class="pencil"> </p> 
 
-              <p><strong>Story Sharing:</strong> Whom do you know who has had different types of jobs or careers in his or her lifetime? Talk to them. Ask what skills they have used consistently along the way. What did they wish they had known or studied in college? <img src="img/pencil.png" alt="pencil" class="pencil"> </p> 
+              <p id="ch_2_topic_1-change"><strong>Story Sharing:</strong> Whom do you know who has had different types of jobs or careers in his or her lifetime? Talk to them. Ask what skills they have used consistently along the way. What did they wish they had known or studied in college? <img src="img/pencil.png" alt="pencil" class="pencil"> </p> 
 
               <p>Go back to the previous chapter and revisit the bios of famous people who have progressed through many phases. President Barack Obama, for example, has been a community organizer, college professor, senator, and president. Think about pop icons who have gone to college and now have more than one business enterprise, e.g., Sean John (P. Diddy) Combs, Magic Johnson, and J. Lo. What new skills did they have to develop along their paths to success?</p> 
 
@@ -954,7 +1063,7 @@
               <p>Are you likely to be taking any courses that may not seem directly relevant to your hoped for career, but may be useful, for example, in learning how to do research, analyze information, or communicate better? Be sure you take some courses that build your skills in public speaking, computing, and data assessment; these can be very diverse and include sociology, for example.</p>
             </div>
 
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-3 sidebar">
+            <div id="ch_2_topic_2-libarts" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-3 sidebar">
 
               <h4><strong>Liberal Arts Course of Study</strong></h4>
 
@@ -968,7 +1077,7 @@
               </ul>
             </div>
 
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+            <div id="ch_2_topic_2-goals" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
 
               <p>Here are some realistic goals in preparing for and beginning college and ultimately finding a job to start your career path:</p>
 
@@ -994,7 +1103,7 @@
 
               <p><strong>Homework</strong>:</p>
 
-              <p>Visit the U.S. Department of Labor's Occupational Handbook website to find out how many different jobs are related to your fields of interest. It is amazing how few people have a sense of the range of options open to them. We tend to think of a few basic categories like medicine, teaching, business, or law. The site is <a href="http://www.bls.gov/ooh/home.htm" target="_blank">Occupational Outlook Handbook</a>. Clicking on any category will give job titles, descriptions, education needed (usually college), and base salary information. <img src="img/pencil.png" alt="pencil" class="pencil"> </p>
+              <p id="ch_2_topic_2-research">Visit the U.S. Department of Labor's Occupational Handbook website to find out how many different jobs are related to your fields of interest. It is amazing how few people have a sense of the range of options open to them. We tend to think of a few basic categories like medicine, teaching, business, or law. The site is <a href="http://www.bls.gov/ooh/home.htm" target="_blank">Occupational Outlook Handbook</a>. Clicking on any category will give job titles, descriptions, education needed (usually college), and base salary information. <img src="img/pencil.png" alt="pencil" class="pencil"> </p>
 
               <p>Using the library, research your particular field(s) of interest. If you are in college you can find information in your college career services office; otherwise use your school or public library. What are the skills needed for the field? What are the pay scales? Use this website: <a href="http://about.salary.com/SalaryWizard/LayoutScripts/Swzl_NewSearch.aspx" target="_blank">Salary Wizard</a>. What kinds of organizations are involved: for profit or not-for-profit, multinational, or entrepreneurial, or large or small? <img src="img/pencil.png" alt="pencil" class="pencil"> </p>
 
@@ -1094,7 +1203,7 @@
 
               <p>One of the key aspects of networking is knowing how to get started. You can start a conversation with something as simple as a comment on the weather and then introduce yourself. Depending on the person you are talking to and the situation you may then want to launch into what is called an "elevator speech" &mdash; what you could say about yourself between the first and 25<sup>th</sup> floor of an elevator ride. You always want to be prepared, whether you meet someone at an event at your school or on the check-out line at a grocery store, to tell your story to someone who might be helpful. Maybe they can help you get into college, obtain a job interview, or help you learn more about a career that interests you. However <em>always</em> remember to ask the other person about themselves. That will impress them the most!</p>
 
-              <p>Here is a link to a website at the career office of West Virginia University that gives some excellent pointers and "elevator speech" examples for students like you: <a href="http://careerservices.wvu.edu/students/build-it/interviewing/developing-your-elevator-speech" target="_blank">Developing Your "Elevator Speech."</a></p>
+              <p id="ch_6_topic_2-office">Here is a link to a website at the career office of West Virginia University that gives some excellent pointers and "elevator speech" examples for students like you: <a href="http://careerservices.wvu.edu/students/build-it/interviewing/developing-your-elevator-speech" target="_blank">Developing Your "Elevator Speech."</a></p>
 
               <p>Visit the site and write down what you learned. <img src="img/pencil.png" alt="pencil" class="pencil">  </p>
 
@@ -1114,7 +1223,7 @@
               <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" data-src='http://video.pbs.org/partnerplayer/SSkA7RR8Wi12K_rsZb5daQ%3D%3D/?autoplay=false&start=0&end=0&chapterbar=false&topbar=true&endscreen=true'></iframe>
               </div>
-              <p class="quote">Building your networks, including finding people in your life who will listen to you, guide and support you, can make all the difference.</p>
+              <p id="ch_3_topic_1-network" class="quote">Building your networks, including finding people in your life who will listen to you, guide and support you, can make all the difference.</p>
 
               <blockquote><strong>Questions:</strong> What does Krishaun say was his purpose in going to college? Why do you think it's important to him to return to Urban Prep? Do you think it will "open doors for him"? What do you think will happen next for him? Why was the barber a good sounding board for Krishaun at this time of his life?</blockquote>
 
@@ -1132,7 +1241,7 @@
                 <iframe class="embed-responsive-item" data-src='http://video.pbs.org/partnerplayer/Tvb0oKy27_83mlpREf7J-g%3D%3D/?autoplay=false&start=0&end=0&chapterbar=false&topbar=true&endscreen=true'></iframe>
               </div>
 
-              <p class="quote">Identifying and developing mentors, including faculty, can make all the difference.</p>
+              <p id="ch_3_topic_1-ask" class="quote">Identifying and developing mentors, including faculty, can make all the difference.</p>
 
               <blockquote><strong>Questions:</strong> In what ways is his academic adviser an effective mentor to Krishaun? How does Krishaun respond to her advice? When is the best time for students to connect with their teachers? How is the opportunity for seeking help different depending upon whether you are doing well or in trouble academically?</blockquote>
 
@@ -1195,7 +1304,7 @@
 
               <p>Identify and list areas in which you are fearful of asking questions related to progress in high school or college. Create scenarios to imagine what the worst case outcome might be (nothing life or death). For example, if you are afraid to speak up in class, what is the worst thing that can happen if you do speak up? Are your fears realistic? How much do your fears have to do with self-image (fear of looking dumb or silly or affirming a negative stereotype based on gender, race, or other differences)? <img src="img/pencil.png" alt="pencil" class="pencil">  </p>
 
-              <p><strong>Information:</strong> A situation that doesn't seem to make sense is that while students go to college to learn, they feel as though they should act like they know everything already. Either they don't want to look dumb by asking questions, or think they look cool by staying silent, or they actually think they do know everything &mdash; until they find out that they don't.</p>
+              <p id="ch_3_topic_3-help"><strong>Information:</strong> A situation that doesn't seem to make sense is that while students go to college to learn, they feel as though they should act like they know everything already. Either they don't want to look dumb by asking questions, or think they look cool by staying silent, or they actually think they do know everything &mdash; until they find out that they don't.</p>
 
               <img src="img/allthedifference-krishaunbasketball-1080x1080.jpg" class="text-around-image-right circle">
 
@@ -1219,13 +1328,13 @@
 
               <img src="img/allthedifference-classroom-1080x1080.jpg" class="text-around-image-left circle">
 
-              <p>One way to get to know college faculty is to use their office hours, which are listed on the syllabus or announced in class. Faculty often sit alone during those hours because students don't come. But the reality is that faculty are more likely to be impressed by students who ask questions. They think you are curious and interested. Prepare for your meeting. You can ask about something discussed in class or if you have questions about an assignment. Perhaps you want to talk about your ideas for a paper that is due or ask for suggestions on more background reading.</p>
+              <p id="ch_3_topic_3-faculty">One way to get to know college faculty is to use their office hours, which are listed on the syllabus or announced in class. Faculty often sit alone during those hours because students don't come. But the reality is that faculty are more likely to be impressed by students who ask questions. They think you are curious and interested. Prepare for your meeting. You can ask about something discussed in class or if you have questions about an assignment. Perhaps you want to talk about your ideas for a paper that is due or ask for suggestions on more background reading.</p>
 
               <p><strong>Make a list</strong> of what you might want to ask or discuss with individual teachers or faculty. <img src="img/pencil.png" alt="pencil" class="pencil">  Then, go and do it!</p>
 
               <p>Teachers, advisers (who are called advisers because their job is to <em>advise students</em>), deans, teaching assistants, and tutoring centers are all available to answer questions. They want you to obtain the information you need to succeed in college and beyond. YOU pay their salaries with tuition dollars and so it would be dumb not to use what you are paying for. It would be like buying a hamburger and leaving the meat behind.</p>
 
-              <p>People &mdash; your connections &mdash; are vital to reaching college and then employment goals. You will:</p>
+              <p id="ch_3_topic_3-impression">People &mdash; your connections &mdash; are vital to reaching college and then employment goals. You will:</p>
               <ul class="list-space">
                 <li>Need recommendations from faculty and deans,</li>
                 <li>Seek information about opportunities from the career office and alumni, and</li>
@@ -1280,7 +1389,7 @@
               What are some of the skills that the writing tutor suggested to Robert? How is Robert taking responsibility for writing a good paper? What kinds of help do you need in writing papers? Will you use tutoring services like this in your school? If no, why not?</blockquote>
             </div>
 
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-3 sidebar">
+            <div id="ch_3_topic_4-admin" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-3 sidebar">
               <h4><strong>College Administrative Hierarchy</strong></h4>
                 <p>A <strong>sample college hierarchy</strong> is presented here. You should always work from the bottom and go up the line when you have a problem. If you start from the top it will be bounced back down the line any way and you may end up with a reputation as a problem person. Setting the right tone and creating a good impression can make all the difference in your outcomes. Again, use your mirror to practice the best way to ask for help. Be courteous.</p>
 
@@ -1390,7 +1499,7 @@
                 <iframe class="embed-responsive-item" data-src='http://video.pbs.org/partnerplayer/v9daIHJwx4iQIz3D9d-V9g%3D%3D/?autoplay=false&start=0&end=0&chapterbar=false&topbar=true&endscreen=true'></iframe>
               </div>
 
-              <p class="quote">Making the right decision at a crossroads in your life can make all the difference.</p>
+              <p id="ch_4_topic_1-crossroads" class="quote">Making the right decision at a crossroads in your life can make all the difference.</p>
 
               <blockquote><strong>Questions:</strong> What did Dr. Meriwether mean when he said, said that Krishaun "took such a major leap?" What might have happened had Krishaun taken action on this own? In what situation have you been that made you seek help from someone in administration at your high school or college? How did it work out?</blockquote>
 
@@ -1414,7 +1523,7 @@
                 <iframe class="embed-responsive-item" data-src='http://video.pbs.org/partnerplayer/sTuUAcj1mbXq6pJJfByALA%3D%3D/?autoplay=false&start=0&end=0&chapterbar=false&topbar=true&endscreen=true'></iframe>
               </div>
 
-              <p class="quote">Understanding consequences and focusing on what will make for academic success can make all the difference.</p>
+              <p id="ch_4_topic_1-consequences" class="quote">Understanding consequences and focusing on what will make for academic success can make all the difference.</p>
 
               <blockquote><strong>Questions:</strong> What are the consequences of Krishaun failing his classes? Does he feel any responsibility to the people who care about him and are counting on his success? What changes should Krishaun make to his life at Fisk in order to get better grades?</blockquote>
 
@@ -1439,11 +1548,11 @@
 
               <p>Let's begin with the question of fitting in and social life at college as this can affect so many other things including academics and health.</p>
 
-              <h4>Personal/Emotional</h4>
+              <h4 id="ch_4_topic_2-emotional">Personal/Emotional</h4>
 
               <p>Events and relationships in your personal life can result in emotional distress. These are sometimes difficult to manage because they can make you feel out of place, left out, or incapable of coping. Keeping silent and avoiding people and situations is not a solution. When we deny the emotional pain we're feeling, it can pop up in new forms. Author Terrie Williams has written a powerful book called <em>Black Pain,</em> which discusses how hard this situation of silence and denial hits black communities; she shares stories from many celebrities including Judy Holliday and Joseph Simmons of Run DMC who have experienced this as well as young men in gangs who found their way out when they dealt with the issues that led them to high risk behaviors.</p>
 
-              <p><strong>Race and Class</strong>:<br />
+              <p id="ch_4_topic_2-race"><strong>Race and Class</strong>:<br />
               For all students going away from home to college, finding their way in a new environment can be challenging. Students from low-income communities are often very uncomfortable on campuses in which they see so many students whose families obviously have much more money and resources. This can be tough. It can be about not having things others have or fear of being seen as somehow less than others. Robert was tested by being in the minority of students of color on Lake Forest's predominantly white campus, a feeling made more intense by differences in family wealth. It may be "stop and frisk" or what is now called "shopping while black" or other forms of slight. This can be especially tough for black males. Read this blog: <a href="http://bit.ly/1hBl1Ll" target="_blank">"And We Wonder Why Black Men Struggle."</a><p>
 
               <p>Dr. Carl Bell, a professor of public health and community psychiatry at the University of Illinois at Chicago, compares the situation of poor white people in Chicago with that of poor black people. He would describe Robert and Krishaun's Englewood neighborhood as a "toxic environment." He says that people living in a "poor black ghetto community," are "kind of like fish in a barrel and so the police hunt you." Bad outcomes are not always the result of such an environment &mdash; because these communities also have "protective factors" such as mothers, fathers, grandparents, friends, places of worship, sports teams, afterschool programs, and teachers.</p>
@@ -1462,7 +1571,7 @@
                 <iframe class="embed-responsive-item" data-src='http://video.pbs.org/partnerplayer/1XMyv9y59nKvFjtq5WUyZg%3D%3D/?autoplay=false&start=0&end=0&chapterbar=false&topbar=true&endscreen=true'></iframe>
               </div>
 
-              <p class="quote">Not allowing stereotypes to define or derail you can make all the difference.</p>
+              <p id="ch_4_topic_2-stereotypes" class="quote">Not allowing stereotypes to define or derail you can make all the difference.</p>
 
               <blockquote><strong>Questions:</strong> Dr. Dozier remembers one student who said she "felt like a black stain on a white t-shirt." What do you think that means? Have you been in a situation in which you felt like that? Have you been in situations in which you have faced discrimination or negative assumptions based on a stereotype? Do you have ways that you usually respond? How has that worked out for you? Have you discussed with others the best ways to deal with both other's false beliefs and your own feelings?</blockquote>
 
@@ -1476,7 +1585,7 @@
                 <iframe class="embed-responsive-item" data-src='http://video.pbs.org/partnerplayer/ul3qyPdx2NPsUrwKnJhfZg%3D%3D/?autoplay=false&start=0&end=0&chapterbar=false&topbar=true&endscreen=true'></iframe>
               </div>
 
-              <p class="quote">Knowing how to embrace diversity can make all the difference.</p>
+              <p id="ch_4_topic_2-diversity" class="quote">Knowing how to embrace diversity can make all the difference.</p>
 
               <blockquote><strong>Questions:</strong> Does Robert feel that he made the right choice in going to Lake Forest? What actions did you see &mdash; or comments did you hear &mdash; in the video that tell you that Robert is comfortable being there? What have you done to become comfortable with new people or people who are different from you, maybe on a job for example? Is your current supportive community a reason not to leave home &mdash; or do they motivate you to try new experiences?</blockquote>
 
@@ -1492,7 +1601,7 @@
 
               <p>Students including Robert and Krishaun also have challenges in dealing with new people including the choice of friends or mates. Robert talks about the limitations in his social life because he feels different as a black man at Lake Forest. By contrast Krishaun feels he will have an easier social situation because Fisk, as a Historically Black College or University (HBCU), has greater potential to feel like a family. Think about how friendships develop and how they may change. For example, at one point, Krishaun's social life changes and he becomes more isolated. Do you expect that you will stay close to people from high school? List the important qualities you look for in friends. <img src="img/pencil.png" alt="pencil" class="pencil"> </p> 
 
-              <p>Social life is a hugely important part of the college experience. Being social is also a major distraction, but that is true inor out of college. Much of what has been said about healthy friendships applies to dating as well. A good relationship is based on respect and friendship first. What are examples of healthy relationships? Think about what you have seen as good and bad relationships in your own families or in the media and then think about the qualities or behaviors that would be important to you in a friend or partner.</p>
+              <p id="ch_4_topic_2-social">Social life is a hugely important part of the college experience. Being social is also a major distraction, but that is true inor out of college. Much of what has been said about healthy friendships applies to dating as well. A good relationship is based on respect and friendship first. What are examples of healthy relationships? Think about what you have seen as good and bad relationships in your own families or in the media and then think about the qualities or behaviors that would be important to you in a friend or partner.</p>
 
               <p>On the other hand, the reality is that hooking up or casual sex is as likely to occur as anything more meaningful. In that case, be responsible.</p>
 
@@ -1502,13 +1611,13 @@
                 <iframe class="embed-responsive-item" data-src='http://video.pbs.org/partnerplayer/sbRJ9CqdHzHDPCGMuDm8sg%3D%3D/?autoplay=false&start=0&end=0&chapterbar=false&topbar=true&endscreen=true'></iframe>
               </div>
 
-              <p class="quote">Abstinence or practicing safe sex can make all the difference.</p>
+              <p id="ch_4_topic_2-sex" class="quote">Abstinence or practicing safe sex can make all the difference.</p>
 
               <blockquote><strong>Questions:</strong> What reasons do Robert and Chrystal give for not having sex? What does Robert say that tells you he is focused on the future &mdash; and not just living in the present? Both Robert and Chrystal use the word "respect" in relation to one another. Why is respect important in relationships?</blockquote>
 
               <p>Revisit the question of how much our avoidance fears have to do with self-image (fear of looking dumb or silly or affirming a negative stereotype as a black male). How does this apply to you in your relationships?</p>
 
-              <h4>Academic Crises</h4>
+              <h4 id="ch_4_topic_2-crises">Academic Crises</h4>
               <p>An academic crisis may look like this scenario: A student has been going along for several weeks, not really understanding the course lectures nor the assigned readings. Since the knowledge in many fields including languages, math, and biology builds directly on what has gone before, the longer students wait to acknowledge a problem, the deeper in trouble they are. And they know it. But they assume that everyone else is doing just fine, and so keep quiet in class. They don't want to show up at the tutoring center because it feels stigmatizing. They study for hours, reading the material over and over, still failing to understand it. Then the student fails the midterm. Other distractions occur and things become more complicated. Sound familiar?</p>
 
               <strong>Steps to Manage an Academic Crisis</strong>
@@ -1538,13 +1647,13 @@
                 <iframe class="embed-responsive-item" data-src='http://video.pbs.org/partnerplayer/z6MzcbbCPMnme0mCdNCRiA%3D%3D/?autoplay=false&start=0&end=0&chapterbar=false&topbar=true&endscreen=true'></iframe>
               </div>
 
-              <p class="quote">Learning to be resilient, meeting challenges head-on, and surrounding yourself with supportive community can make all the difference.</p>
+              <p id="ch_4_topic_2-resilient" class="quote">Learning to be resilient, meeting challenges head-on, and surrounding yourself with supportive community can make all the difference.</p>
 
               <blockquote><strong>Questions:</strong> What difference has having support networks &mdash; family, school, and community &mdash; made to Robert and Krishaun? Which one, Robert or Krishaun, seems to have a stronger self-motivation to achieve? What makes you think that's true? Think of yourself &mdash; do you have both a support network of family and community AND self-motivation to "come out on top" and achieve academically?</blockquote>
 
               <p>Whom do you go to now when you are having academic difficulties? Do you tend to seek help early or late in the game? Early is best.</p>
 
-              <h4>Health and Well Being</h4> 
+              <h4 id="ch_4_topic_2-health">Health and Well Being</h4> 
               <p>An expression, deriving from the Latin <em>mens sana in corpore sano</em>, praises "a sound mind in a sound body." You cannot do well in college (or in life) without taking care of your physical and mental well being.</p>
 
               <p>Teens are notorious for late hours and not enough sleep. But the evidence is in that you will do better with more sleep. Some high schools are even starting their day later to help students get the sleep they need. In college you will have to self-regulate. Remember Krishaun's concern that he may not be able to get going without his mother's help? Robert has to begin his day without the biscuits his grandmother made him in high school.</p>
@@ -1559,7 +1668,7 @@
                 <iframe class="embed-responsive-item" data-src='http://video.pbs.org/partnerplayer/Cuf6TrEi0-8xsaE_xNg9Tg%3D%3D/?autoplay=false&start=0&end=0&chapterbar=false&topbar=true&endscreen=true'></iframe>
               </div>
 
-              <p class="quote">In coping with stress, talking with advisers, constructive activity, work and faith can make all the difference.</p>
+              <p id="ch_4_topic_2-stress" class="quote">In coping with stress, talking with advisers, constructive activity, work and faith can make all the difference.</p>
 
               <blockquote><strong>Questions:</strong>Who seems to have more stress in his life, Robert or Krishaun? Why do you think that is? What effect has stress had on Krishaun's school work and what does he do about it? Robert's piano teacher praises him for making an adjustment in his playing. What adjustments or changes can you make in different areas of your life to help you to have less stress?</blockquote>
 
@@ -1575,7 +1684,7 @@
 
               <p><strong>Hands-On Problem-Solving Activity:</strong> Revisit or imagine a situation in which you or one of your friends made a crucial mistake, had a personal crisis, or were facing the consequences of high-risk behaviors like a drug overdose. List the available resources that could help in a crisis &mdash; at home, school, work, or in a faith environment. What would you do to resolve the situation? Where might you begin, and what steps should you take, for example, if you were to use the college hierarchy (see information in Chapter Three on hierarchy)? <img src="img/pencil.png" alt="pencil" class="pencil"> <a href="http://huff.to/1iPZal7" target="_blank">Read my blog on why making a mistake is not the end of your life.</a></p>
 
-              <p><strong>High Risk Behaviors:</strong> Be aware of and become informed about the devastating effects of high-risk behaviors. These include using or abusing drugs (including prescription drugs) and alcohol as well as dangers related to sexual behaviors such as STDs and unplanned pregnancies.</p>
+              <p id="ch_4_topic_2-risk"><strong>High Risk Behaviors:</strong> Be aware of and become informed about the devastating effects of high-risk behaviors. These include using or abusing drugs (including prescription drugs) and alcohol as well as dangers related to sexual behaviors such as STDs and unplanned pregnancies.</p>
 
               <p>Drugs and alcohol can make stressful situations and potential crises worse. Seeking help is better than self-medicating. One of the biggest problems on campuses these days is the use and abuse of prescription drugs to manage mood and productivity. The risk is high for addiction and permanent damage to both physical and mental health. To find out the facts about each drug, <a href="http://www.drugabuse.gov/students.html" target="_blank">visit the website</a>. <img src="img/pencil.png" alt="pencil" class="pencil">  While headlines report student deaths, they seldom report the cases of long-term damage from drug use, in which abusers permanently harm themselves and, in many cases, harm others.</p>
 
@@ -1665,7 +1774,7 @@
 
               <p>Write a paragraphabout when you have set your sights on a goal and what you have had to do or even sacrifice to achieve it. This could become part of an application for school, a scholarship, or even a job. <img src="img/pencil.png" alt="pencil" class="pencil"> </p> 
 
-              <p><strong>Information:</strong> One of the first shocks to students starting college is managing time &mdash; how quickly it gets away from them. This is one of the most significant areas that trip up students; both Robert and Krishaun talk about it. In college, time is much more your own. Being able to choose among jobs, extracurricular activities, and friends, it is easy to let schoolwork slide. Robert and Krishaun had to learn, sometimes the hard way, how to make the right choices.</p>
+              <p id="ch_5_topic_1-diff"><strong>Information:</strong> One of the first shocks to students starting college is managing time &mdash; how quickly it gets away from them. This is one of the most significant areas that trip up students; both Robert and Krishaun talk about it. In college, time is much more your own. Being able to choose among jobs, extracurricular activities, and friends, it is easy to let schoolwork slide. Robert and Krishaun had to learn, sometimes the hard way, how to make the right choices.</p>
 
               <p>Writing papers requires focused time, for example, and can't be done on the fly. Some advice from Robert's chemistry professor and adviser, Dr. Del Negro, was, "Obviously you can't think deeply if you're constantly interrupted. You've got to carve out the time so that you can actually think about the papers as you're writing them and think about the reading that you're doing and keep it altogether. Otherwise you're just starting over every time you get interrupted and that's not useful time for you." Research indicates that when interrupted &mdash; or when we interrupt ourselves, for example, by checking cell phones &mdash; we can lose our train of thought and focus. Does that sound familiar to you?</p>
 
@@ -1677,7 +1786,7 @@
 
               <p>Not enough hours in a day &mdash; we all say that, sometimes frequently. But actually, depending on how we choose to use it, there is enough time. Less time on Facebook or YouTube, less beer drinking, playing Frisbee or guitar, commenting on <em>The Voice</em>, or hanging out at the local coffee shop &mdash; less time on all of those could give you more time for more productive activities. It's up to you how you spend the remaining 37 hours per week: fooling around or doing laundry, attending a club meeting, dating, seeing a movie, or whatever else you want or need to do. What about time to meet with a professor, your adviser, or study group, or going to the library or writing center? Keep notes on how you spend your time for two weeks.Be very specific minute to minute. See how you could be more effective in using your time. <img src="img/pencil.png" alt="pencil" class="pencil"> </p>
 
-              <p>Setting priorities will enable you to achieve your goals. As their college lives progress, Robert and Krishaun become better at setting and working on priorities. Krishaun's mentor MarQo gives him a formula for leading a balanced life that emphasizes high academic goals. MarQo explains:</p>
+              <p id="ch_5_topic_1-priorities">Setting priorities will enable you to achieve your goals. As their college lives progress, Robert and Krishaun become better at setting and working on priorities. Krishaun's mentor MarQo gives him a formula for leading a balanced life that emphasizes high academic goals. MarQo explains:</p>
 
               <blockquote>[Paraphrase] "I want you to see that you can't get more hours out of a day. 24 hours and that day is done. You can't say I'm going to study more if you're keeping your popular kid game on lock. So unless you take down your recreational activities, maybe even take down some of your leadership activities, you won't have more study time. Young people get caught up on things and miss out on what we came for: to achieve academically and to grasp the knowledge of the field that we're looking to go into. That should really be our main focus. Second, I think, should be leadership. Third should be sleep. Fourth should be recreational activities. That's how I would rank them. Your recreational activities help you to rejuvenate, help you to keep releasing your stress, and also keep you fresh and motivated to do what you have to do. Don't think for one moment that you're going to achieve high on the smart guy game, on the 4.0, and on the studying, if you keep your recreational activities at the level they currently are. Something has to go down so something else can come up."</blockquote>
 
@@ -1685,7 +1794,7 @@
 
               <p>A constant self-question is: Why are you in college? The answer is: <em>You are there to gain the skills and credentials that will help your dreams come true.</em> You are not there to drink the most beer, be president of the fraternity, direct every play on campus, or win the final four in basketball. <strong>Class work</strong>, your <strong>health</strong>, the <strong>job</strong> or <strong>internship</strong> that allows you to stay in school or furthers your career plans, and your <strong>relationships</strong> are the priorities, in about that order. The balance can shift periodically, but you have to keep those four in your sights at all times.</p>
 
-              <p>The best strategy is to plan, beginning with basic tools such as a planner, cellphone, or calendar. Using a planner (paper or online) is essential. <img src="img/pencil.png" alt="pencil" class="pencil">  (Ask for one as a gift.) It can make all the difference. Use whatever works best for you &mdash; with an emphasis on <em>use</em>. It is important to keep a daily list of the main tasks you want to accomplish. You are less likely toforget them that way. Keep in mind what your priorities are to attain success in college. Go back to that list of goals and priorities you just made. And include planning self-time to maintain health and mental balance.</p>
+              <p id="ch_5_topic_1-planning">The best strategy is to plan, beginning with basic tools such as a planner, cellphone, or calendar. Using a planner (paper or online) is essential. <img src="img/pencil.png" alt="pencil" class="pencil">  (Ask for one as a gift.) It can make all the difference. Use whatever works best for you &mdash; with an emphasis on <em>use</em>. It is important to keep a daily list of the main tasks you want to accomplish. You are less likely toforget them that way. Keep in mind what your priorities are to attain success in college. Go back to that list of goals and priorities you just made. And include planning self-time to maintain health and mental balance.</p>
 
               <p>Planning is not simply recording the day and time of specific events. This may work for keeping track of a dinner date. Complex tasks such as a paper involve looking ahead and also back. Recording only the due date for a paper is not sufficient. Writing requires long stretches of time, so blocks of time of an hour or more should be planned for each stage of the process. For example, reading and looking for research materials for the paper take time. To keep from procrastinating, set a goal for a first draft and put that date on the calendar, as well as make an appointment (another date on the calendar) to show the draft to your professor. Other assignments, such as reading a novel for an English class, may be done in small time chunks. But each piece or action has to have its place on the calendar.</p>
 
@@ -1698,8 +1807,8 @@
             <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-7 col-lg-offset-1">
             <p><strong>Story Sharing:</strong> Talk to a person you know who seems to have a zillion things going on that they get done. Ask how they organize to get things done? What planning and time management tools and strategies do they use? Have they had to change habits or strategies over the years? What tricks have they used to be more effective or to get back on track? <img src="img/pencil.png" alt="pencil" class="pencil"> </p>
             </div>
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-3 sidebar">
-              <h4><strong>Strategies to Manage Time</strong></h4>
+            <div id="ch_5_topic_1-time" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-3 sidebar">
+              <h4 ><strong>Strategies to Manage Time</strong></h4>
               <p>Here are stories of time management from two students who graduated from Hunter College and NYU about what they did in college. Both had very high grades, jobs, and several extracurricular activities.</p>
 
               <strong>Endri Horanilli, Hunter College '08, Clinical Counselor, Veterans Administration</strong>
@@ -1738,7 +1847,7 @@
                 <iframe class="embed-responsive-item" data-src='http://video.pbs.org/partnerplayer/33FIcjXiuJBQwvyI15zyxA%3D%3D/?autoplay=false&start=0&end=0&chapterbar=false&topbar=true&endscreen=true'></iframe>
               </div>
 
-              <p class="quote">Getting help from faculty and developing strong study skills can make all the difference.</p>
+              <p id="ch_5_topic_2-help" class="quote">Getting help from faculty and developing strong study skills can make all the difference.</p>
 
               <blockquote><strong>Questions:</strong> Robert meets with both of his professors. How confident are they about Robert's ability to learn? What help is he getting from each one of them? What is Dr. Del Negro trying to do with Robert? What study skills does Dr. Iman mention to him? What additional study skills might work for you? Listwhat new information you heard from these professors. <img src="img/pencil.png" alt="pencil" class="pencil"> </blockquote>
 
@@ -1746,7 +1855,7 @@
 
               <p>Learning will change from memorization to processing information and learning how to access knowledge. These are also workplace skills. For example, an employer will expect that you will be able to find information online using a variety of tools. For example, find out what LexisNexis is. <img src="img/pencil.png" alt="pencil" class="pencil">  How might that be useful at school or at work? The school librarian can help you build your research skills as you write papers for your classes.</p>
 
-              <p>One thing you may not realize is that <em>you need to learn how to read for college</em>. Yes, you might make it to college, but that does not mean you know how to read. Reading is an essential life and work skill. In college, first you have to obtain the books or articles needed, and then you have to learn <em>how to read</em> in different disciplines to be most effective. In college and the world of work, reading is about comprehension and interpretation. Some sciences, like biology, may require a lot of memorization, but you also have to understand what you are memorizing. So reading with access to a glossary or dictionary is wise.</p>
+              <p id="ch_5_topic_2-reading">One thing you may not realize is that <em>you need to learn how to read for college</em>. Yes, you might make it to college, but that does not mean you know how to read. Reading is an essential life and work skill. In college, first you have to obtain the books or articles needed, and then you have to learn <em>how to read</em> in different disciplines to be most effective. In college and the world of work, reading is about comprehension and interpretation. Some sciences, like biology, may require a lot of memorization, but you also have to understand what you are memorizing. So reading with access to a glossary or dictionary is wise.</p>
 
               <p>If reading in the humanities (history, philosophy, art) or social sciences (psychology, sociology, economics), look for themes or key concepts and evidence to support them. How does the author make his/her case? Look at the table of contents and even the index of a book, or at the introduction of an essay as the roadmap to where the author wants to lead you. Unlike reading a mystery novel, it is okay to jump to the end to see what the conclusion is. Then read the middle, looking for the proofs and examples of what the author wants you to believe or understand. Once you know what you're looking for, it is easy to skim or read faster. A key skill in learning is to argue with evidence, so note where you disagree with the author's premises and why. Use whatever tools work for you to highlight key points. Underline, use a highlighter, take notes, or mark a page with a post-it note.</p>
 
@@ -1758,7 +1867,7 @@
 
               <p>Assigned course readings come in various forms. You MUST get the books or materials. One of the mistakes Robert makes early in his college career is not buying his books and getting very behind. It certainly would have contributed to his early struggles with his grades and risk to his scholarships. In college the syllabus will explainwhat you should expect to read. Some readings may be in books you will have to buy, or they may be on reservein the library. Some will be articles found on the web, on reserve, or in a course pack prepared by the instructor specifically for the course. These can usually be bought at the campus or local bookstore or at a copy center near or affiliated with your campus. If the professor uses Blackboard or another course networking site, some materials may be posted there. Course packs contain shorter items (such as a book chapter) so that students don't have to pay for the entire book. The instructor will specify the edition of a particular book; pay attention to this so you are reading the right material. If a new edition is replacing an older one, the assigned pages will not match up; new or updated content may have been added. If the same edition is used every year, however, it is possible to save money in a variety of ways including rentals.</p>
             </div>
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-7 col-lg-offset-1">
+            <div id="ch_5_topic_2-study" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-7 col-lg-offset-1">
               <p><em>Here is the key point about reading and studying</em>: you need to find the big or most important ideas in whatever you are working on. It may be a concept, formula, or a series of facts. Then ask the professor what the most important concepts are and what they are expected to master. You may also ask what material will be covered on a test.</p>
 
               <p>Some subjects, often quantitative, lend themselves to the use of study groups or even online communities, sometimes created by the professor. Lab work is often done in teams. Successful students form groups to solve problems or test themselves, and they share strengths or different ways of framing the work so it is clearer. The groups may be from the same classes or may come from groups of students you know and are comfortable with and may be taking some of the same or similar classes. Group members should help one another to understand the material as well as the processes to obtain solutions to problems. By teaching someone else we reinforce our own learning. In the workplace tasks are often done in teams, so this is also good practice. Teamwork can make all the difference. You can practice these techniques even in high school and get better grades &mdash; as long as you study together and not just socialize.</p>
@@ -1767,7 +1876,7 @@
 
               <p><strong>Story Sharing:</strong> Ask a mentor or friend to share some of the strategies they have used to learn things or find information needed for work or other situations. <img src="img/pencil.png" alt="pencil" class="pencil">  This might be a time to talk about how they use technology such as a computer search engine on their jobs.</p>
             </div>
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-3 sidebar no-margin">
+            <div id="ch_5_topic_2-money" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-3 sidebar no-margin">
               <h4><strong>Saving Money on Books and Materials</strong></h4>
               <p>Having books is essential, but need not be a budget breaker. Here are some money-saving ideas. Just decide if you want to keep a book before you rent or buy it. If you plan to resell it, you'll want to keep it in the best condition you can. This may limit some of the ways you can use your textbooks to remember information &mdash; no highlighting or notes, for example.</p>
               <ul class="list-unstyled">
@@ -1880,7 +1989,7 @@
                 <iframe class="embed-responsive-item" data-src='http://video.pbs.org/partnerplayer/BNY4COnuzvAy6gkDi0zCIQ%3D%3D/?autoplay=false&start=0&end=0&chapterbar=false&topbar=true&endscreen=true'></iframe>
               </div>
 
-              <p class="quote">Maximizing your networks can make all the difference.</p>
+              <p id="ch_6_topic_1-networks" class="quote">Maximizing your networks can make all the difference.</p>
 
               <blockquote><strong>Questions:</strong> Robert says he wants to be a firefighter/emergency medical technician (EMT) in Chicago. How does his new job interest relate to his early dream of being a doctor? How will his experience with City Year help him to become a fire fighter/EMT? He talks about one of City Year's core values (as well as his own), social justice for all, as an inspiration for the work he will choose. What are some other jobs in which Robert can pursue social justice? What are some of your own personal values? What skills would you like to gain from a job? With whom can you connect to learn more about a career that interests you?</blockquote>
 
@@ -1894,7 +2003,7 @@
                 <iframe class="embed-responsive-item" data-src='http://video.pbs.org/partnerplayer/1ExjHDJm2YjmflCqzx4U5A%3D%3D/?autoplay=false&start=0&end=0&chapterbar=false&topbar=true&endscreen=true'></iframe>
               </div>
 
-              <p class="quote">Being a man who gives to others can make all the difference.</p>
+              <p id="ch_6_topic_1-give" class="quote">Being a man who gives to others can make all the difference.</p>
 
               <blockquote><strong>Questions:</strong> What makes you proud to do the work you are doing &mdash; in school, in the community, and in your family? What services are you providing to others? Is "giving back" something you want to make part of your life &mdash; if not now, then in the future? What can you do to explore ways to be helpful to others in your community?</blockquote>
             </div>
@@ -1917,7 +2026,7 @@
                 <iframe class="embed-responsive-item" data-src='http://video.pbs.org/partnerplayer/Xr2n2QyoM4bzRwatj1SkIg%3D%3D/?autoplay=false&start=0&end=0&chapterbar=false&topbar=true&endscreen=true'></iframe>
               </div>
 
-              <p class="quote">Connecting to the career center sooner, rather than later, can make all the difference.</p>
+              <p id="ch_6_topic_2-center" class="quote">Connecting to the career center sooner, rather than later, can make all the difference.</p>
 
               <blockquote><strong>Questions:</strong> What are some reasons to visit the career center early in your college life? How good a resume do you have &mdash; and have you asked someone in the career center to review it? What are some ideas you have to "get your foot in the door" of a job that interests you? How can the career center help you?</blockquote>
 
@@ -1933,7 +2042,7 @@
                 <li><strong>Create a plan of action</strong> to guide your search for that first job. This process will help you develop skills that you will use repeatedly throughout your lifetime. Remember, the free resources at the college career office cost thousands of dollars later in life. Like the gym, it is a "free" resource that college tuition actually pays for. You are entitled to use it to the maximum, and many schools let you continue to do so as an alumnus for the rest of your life. You can also use public programs or resources like the library.</li>
               </ul>
 
-              <p><strong>The Career Office</strong></p>
+              <p id="ch_6_topic_2-office"><strong>The Career Office</strong></p>
 
               <p>The following tips suggest resources and strategies to help you learn about careers and get ready for a job search.</p>
                 <li><strong>Visit the career office</strong> in college and learn about the resources available. Ideally, you should start doing this as a freshman or sophomore, but any time up to the middle of senior year is useful. You have time to build a strong resume that way. By the second half of your senior year, it is late to start the process &mdash; not hopeless, but your options will be fewer. The local library is also a great resource.</li>
@@ -1969,11 +2078,11 @@
                 <iframe class="embed-responsive-item" data-src='http://video.pbs.org/partnerplayer/wcNkarCn1HHsvAyMsWH6ig%3D%3D/?autoplay=false&start=0&end=0&chapterbar=false&topbar=true&endscreen=true'></iframe>
               </div>
 
-              <p class="quote">Understanding the job offer including work requirements, salary, and benefits can make all the difference.</p>
+              <p id="ch_6_topic_2-offer" class="quote">Understanding the job offer including work requirements, salary, and benefits can make all the difference.</p>
 
               <blockquote><strong>Questions:</strong> Do you think Robert did a good job meeting with potential employers? What would you do that is the <em>same</em> as what he did? What would you do <em>differently</em>? Why is City Year a good job opportunity? What are the things you should look for that will enable you to support yourself? <em>(Look at potential expenses at the end of this chapter.)</em> Get tips from the career center or a mentor on how to negotiate a salary and benefits package. Some (not all) employers negotiate these things, including more vacation time if they can't provide a higher salary.</blockquote>
 
-              <p><strong>The Job Search Process</strong></p>
+              <p id="ch_6_topic_2-search"><strong>The Job Search Process</strong></p>
 
               <p>These <strong>tips and strategies</strong> will help in your job search process.</p>
 
@@ -2052,7 +2161,7 @@
 
               <p>During this high stress time, keep close to those who are close to you. Sharing meals may be a good time to connect and get the advice and support you need. Supportive family and friends can make all the difference. Try to have family members or close friends that you can talk to about your goals and plans. They should be the people who celebrate with you when you achieve your goals or who can make you feel better when things are not going as well as you would hope. Maybe your first response is a "no," or you aren't accepted by your first choice school. You will want to share that with someone who will be supportive until the "yes" finally arrives.</p>
             </div>
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-6 sidebar">
+            <div id="ch_6_topic_3-checklist" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-lg-offset-0 col-lg-6 sidebar">
               <h4>Checklist for Applying to Graduate or Professional School</h4>
               <p>Here are some <strong>key milestones</strong> for the graduate school application process. (It is similar to what you would do for the college application process.)</p>
               <em>Early Junior Year</em>
@@ -2101,13 +2210,13 @@
                 <iframe class="embed-responsive-item" data-src='http://video.pbs.org/partnerplayer/a91eavkVKRBASmlZMVHfSQ%3D%3D/?autoplay=false&start=0&end=0&chapterbar=false&topbar=true&endscreen=true'></iframe>
               </div>
 
-              <p class="quote">Learning how to be a responsible father can make all the difference.</p>
+              <p id="ch_6_topic_4-father" class="quote">Learning how to be a responsible father can make all the difference.</p>
 
               <blockquote><strong>Questions:</strong> Neither Krishaun nor Robert had responsible and engaged fathers in their lives. How have they learned what being a father and a good man looks like? What role does mentorship play? Krishaun says that one of his goals was to bring his child "into a better situation." How is baby Krishaun Jr.'s situation better than his dad's had been? What does fatherhood and responsibility look like to you?</blockquote>
 
               <p>Go back to Chapter One on financial aid and look again at the discussion about budgeting. Do a detailed budget and see how it fits with your job prospects. Consider job benefits as well as salary. Some employers cover a portion or all of your health care, for example, and others have a retirement savings plan. It may be that some jobs do not suit your needs, or you may (more likely) have to adjust your lifestyle and expenses to fit your starting salary. Many people have to work at two or more jobs. Spending less money on iTunes or meals out may be a solution, or you may need a roommate or two or three. Hard as it may be, try to avoid credit card debt with its high interest rates. As a college graduate, your new beginning should include setting your financial house in order.</p>
 
-              <p>Most of you will have expenses related to the following areas &mdash; from housing to health care to transportation. We've highlighted some factors that will determine how well you can afford your new life. Include savings as part of your budget and financial planning.</p>
+              <p id="ch_6_topic_4-expenses">Most of you will have expenses related to the following areas &mdash; from housing to health care to transportation. We've highlighted some factors that will determine how well you can afford your new life. Include savings as part of your budget and financial planning.</p>
 
               <p><strong>Housing</strong> is going to be the big factor. You may or may not be able to stay in the same living arrangement you've had all through school, or you may want a change. Even if you're living with your family, they may expect more of you now in terms of a contribution to the household budget. If you've been lucky enough to live in campus housing, you will have to find a new place to live.</p>
 
@@ -2127,7 +2236,7 @@
 
               <p>Ask your friends and family for their favorite ideas or websites for saving and spending wisely.</p>
 
-              <h4>Using Learned Skills and Developing New Skills</h4>
+              <h4 id="ch_6_topic_4-skills">Using Learned Skills and Developing New Skills</h4>
 
               <p>You watched Robert effectively handle his online interview with City Year. Next, watch the following clip that shows him in Columbia, South Carolina, employed by City Year to work at Heyward Gibbes Middle School. This is a year of service for Robert, an opportunity to give back to the community. He will provide individualized support to at-risk students, while also establishing an overall positive learning environment in the school. His dedication and hard work will help students reach their full potential, while also having a positive effect on the community as a whole. Robert is developing his leadership and collaboration (teamwork) skills. He is utilizing what he's already learned through academic and life experiences as well learning new skills as he adjusts to his new job. In a classroom at Gibbes, Robert says that he tells the children: "It's okay not to get math, it's okay to make mistakes, and okay to ask for help." (These are lessons you've also been learning in the pages of this handbook.) The skills that make him a successful City Year AmeriCorps member are things he learned in college: to build a support network, find solutions, and keep going. He shares his own story with students as a way to build a relationship with them and to motivate them. Principal Sarah Smith says that building relationships is very powerful. Once students are able to "build their self-confidence, they can move to the next level."</p>
 
@@ -2150,7 +2259,6 @@
                 <li>Build your resume using jobs and extracurricular activities on and off campus all the way through school.</li>
                 <li>Become skilled in tapping your networks to help find the kinds of work that interest you.</li>
               </ul>
-
               <p>Using every resource a college has to offer can make all the difference in finding a job at the end. And then plan for life afterwards and all the rewards that it may bring.</p>
             </div>
           </section>

@@ -54,7 +54,7 @@
 body.overflow{
   overflow: hidden;
 }
-#wrapper.toggled #page-cover{
+#wrapper.side-menu #page-cover{
   position: fixed;
   top: 65px;
   left: 250px;
@@ -64,14 +64,14 @@ body.overflow{
   background-color: rgba(255,255,255,0.5);
   overflow: hidden;
 }
-#wrapper.toggled #page-content-wrapper{
+#wrapper.side-menu #page-content-wrapper{
   left: 250px;
   right: -250px;
 }
-#wrapper.toggled #menu-button{
+#wrapper.side-menu #menu-button{
   left: 250px;
 }
-#wrapper.toggled #menu-button #brand{
+#wrapper.side-menu #menu-button #brand{
   opacity: 0;
 }
 

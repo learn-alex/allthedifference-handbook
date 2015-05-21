@@ -2,21 +2,16 @@ $(function() {
   menuToggle();
   scrollSpy();
   showTooltip();
+  navFunctionality();
   cssLoaders(); // init the css loaders
 });
 
-// show menu for mobile user
+// show side-menu for mobile user
 function menuToggle(){
   $("#menu-toggle, #page-cover").click(function(e) {
     e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
+    $("#wrapper").toggleClass("side-menu");
     $("body").toggleClass("overflow");
-  });
-
-  $("#navbar li>a").click(function(){
-    $("#wrapper").removeClass("toggled");
-    $("body").removeClass("overflow");
-    //$('#page-content-wrapper').scrollTo(this.hash, this.hash); 
   });
 }
 
@@ -58,9 +53,10 @@ function scrollSpy(){
   $('#page-content-wrapper').scroll(function(){
     var windowPos = $('#page-content-wrapper').scrollTop();
     var docHeight = $('body').height()/2;
+    var i;
 
     // navSpy highlighting the nav as page scroll
-    for (var i=0; i < navLinks.length; i++) {
+    for (i = 0; i < navLinks.length; i++) {
       var theID = navLinks[i];
       var selecter = "a[href='" + theID + "']";
 
@@ -73,12 +69,6 @@ function scrollSpy(){
           $(theID+' .intro-header').css({'background-position-y': '0px'});
         }
         
-        if (divPos <= docHeight && docHeight < (divPos + divHeight)) {
-          $(selecter).addClass("active");
-        } else {
-          $(selecter).removeClass("active");
-        }
-
         // scroll the nav
         $('#navbar').scrollTop(windowPos/100);
       }
@@ -87,7 +77,7 @@ function scrollSpy(){
 
     // lazyload the video
     docHeight = $('body').height();
-    for (var i = 0; i < iframes.length; i++) {
+    for (i = 0; i < iframes.length; i++) {
       var iframe = iframes[i];
       var selecter = "#"+iframe.id;
 
@@ -98,7 +88,46 @@ function scrollSpy(){
           $(selecter).addClass("lazyload").attr('src', iframe.src).removeAttr('data-src');
         }
       }
-    };
+    }
     // Lazyload END
   });
 }
+
+function navFunctionality(){
+  highlightNav();
+  unfoldNav();
+}
+
+function highlightNav(){
+  $('ul#navbar a').on('click', function(){
+    var allLinks = $('ul#navbar a');
+
+    // Remove class active from all nav elems 
+    allLinks.removeClass('active');
+    addActiveToNestedElems($(this));
+  });
+}
+
+function addActiveToNestedElems(elem){
+  // This funciton will highlight all parent navigation of the clicked element. 
+
+  var end = false;
+  while(!end){
+    // Add class active to the current nav elem
+    elem.addClass('active');
+
+    // If the current nav elem is a nav header, break the loop
+    if (elem.closest('ul').attr('id') == 'navbar'){ end = true; }
+
+    // Otherwise, traverse up the nav bar to the parent elem of the clicked elem. Set 'elem' to that element. 
+    elem = elem.closest('ul').closest('li').children('a').first();
+  }
+}
+
+function unfoldNav(){
+  $('ul#navbar li a').on('click', function(){
+    $(this).closest('li').children('ul').toggle();
+  });
+}
+
+
