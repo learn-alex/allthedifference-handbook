@@ -131,8 +131,9 @@ function addActiveToNestedElems(elem){
 }
 
 function unfoldNav(){
-  $('ul#navbar .nav-sub1 li').on('click', function(){
-    $(this).children('ul').toggle();
+  $('ul#navbar .nav-sub1 li a').on('click', function(){
+    $(this).closest('li').children('.nav-sub2').toggle();
+    console.log($(this))
   });
 }
 
