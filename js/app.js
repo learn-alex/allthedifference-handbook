@@ -75,12 +75,6 @@ function scrollSpy(){
           $(theID+' .intro-header').css({'background-position-y': '0px'});
         }
         
-        // if (divPos <= docHeight && docHeight < (divPos + divHeight)) {
-        //   $(selecter).addClass("active");
-        // } else {
-        //   $(selecter).removeClass("active");
-        // }
-
         // scroll the nav
         $('#navbar').scrollTop(windowPos/100);
       }
