@@ -6,18 +6,12 @@ $(function() {
   cssLoaders(); // init the css loaders
 });
 
-// show menu for mobile user
+// show side-menu for mobile user
 function menuToggle(){
   $("#menu-toggle, #page-cover").click(function(e) {
     e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
+    $("#wrapper").toggleClass("side-menu");
     $("body").toggleClass("overflow");
-  });
-
-  $("#navbar li>a").click(function(){
-    $("#wrapper").removeClass("toggled");
-    $("body").removeClass("overflow");
-    //$('#page-content-wrapper').scrollTo(this.hash, this.hash); 
   });
 }
 
