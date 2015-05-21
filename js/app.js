@@ -2,7 +2,7 @@ $(function() {
   menuToggle();
   scrollSpy();
   showTooltip();
-  highlightNav();
+  navFunctionality();
   cssLoaders(); // init the css loaders
 });
 
@@ -104,6 +104,11 @@ function scrollSpy(){
   });
 }
 
+function navFunctionality(){
+  highlightNav();
+  unfoldNav();
+}
+
 function highlightNav(){
   $('ul#navbar a').on('click', function(){
     var allLinks = $('ul#navbar a');
@@ -128,4 +133,11 @@ function addActiveToNestedElems(elem){
     // Otherwise, traverse up the nav bar to the parent elem of the clicked elem. Set 'elem' to that element. 
     elem = elem.closest('ul').closest('li').children('a').first();
   }
+}
+
+function unfoldNav(){
+  $('ul#navbar .nav-sub1 li').on('click', function(){
+    // $(this).addClass("fast");
+    $(this).children('ul').slideToggle('slow');
+  });
 }
