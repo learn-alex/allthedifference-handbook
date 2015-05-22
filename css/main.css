@@ -396,3 +396,7 @@ h4{
 p.clearfix {
   margin-bottom: -30px;
 }
+
+.li-buffer {
+  margin-bottom: 10px;
+}
