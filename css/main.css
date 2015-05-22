@@ -282,6 +282,12 @@ h4.section-heading {
   font-size: 120%;
   color: #000;
 }
+h5.section-heading {
+  font-weight: normal;
+  font-size: 110%;
+  color: #000;
+}
+
 h4{
   font-size: 150%;
   margin-top: 25px;
