@@ -278,6 +278,16 @@ main > section+section .intro-header+div section:first-child h2.section-heading{
 h3.section-heading{
   font-size: 140%;
 }
+h4.section-heading {
+  font-size: 120%;
+  color: #000;
+}
+h5.section-heading {
+  font-weight: normal;
+  font-size: 110%;
+  color: #000;
+}
+
 h4{
   font-size: 150%;
   margin-top: 25px;
@@ -379,4 +389,14 @@ h4{
   font-size: 90%;
   font-weight: normal;
   margin-top: -10px;
+}
+
+/* Helpers */
+
+p.clearfix {
+  margin-bottom: -30px;
+}
+
+.li-buffer {
+  margin-bottom: 10px;
 }
