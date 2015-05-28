@@ -21,7 +21,54 @@
 }
 
 .author img {
-  margin: 30px 25px 0px 0px;
+  margin: 30px 25px 30px 0px;
+  height: 402px;
+  float: left;
+}
+
+.author p {
+  position: absolute;
+  top: 406px;
+  font-size: .8em;
+  letter-spacing: 1px;
+  left: 34px;
+  color: gray;
+}
+
+@media(max-width: 1200px){
+  .author img {
+    height: 350px;
+  }
+  .author p {
+    top: 354px;
+    left: 24px;
+  }
+}
+
+@media(max-width: 560px){
+  .author img {
+    height: 288px;
+  }
+  .author p {
+    top: 292px;
+    left: 43px;
+  }
+}
+
+@media(max-width: 480px){
+  .author { 
+    text-align: center;
+  }
+  .author img {
+    float: none;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .author p {
+    position: static;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 /* Loaders.css */
