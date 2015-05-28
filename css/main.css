@@ -390,6 +390,25 @@ h4{
   font-weight: normal;
   margin-top: -10px;
 }
+.resources a, .resources a:hover, .resources a:focus {
+  text-decoration: none;
+}
+
+
+/* Video Tagline Section */
+
+.video-taglines {
+  margin-bottom: 75px;
+}
+
+.video-taglines p {
+  margin: 40px 0px 20px -20px;
+}
+
+
+/* Resources Section */
+
+
 
 /* Helpers */
 
@@ -399,4 +418,12 @@ p.clearfix {
 
 .li-buffer {
   margin-bottom: 10px;
+}
+
+.no-top-mar {
+  margin-top: 0px;
+}
+
+.indent-li {
+  margin-left: 20px;
 }
