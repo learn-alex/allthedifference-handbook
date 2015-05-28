@@ -386,6 +386,13 @@ h4{
   }
 }
 
+/* Sidebar Gutter */
+@media(max-width: 1200px){
+  .sidebar-gutter p:first-child {
+    margin-top: 0px;
+  }
+}
+
 /* Style for Quotes on the page */
 .quote{
   text-align: center;
