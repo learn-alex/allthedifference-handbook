@@ -482,3 +482,10 @@ p.clearfix {
 .indent-li {
   margin-left: 20px;
 }
+
+/* Removes dot next to li on a mobile device */
+@media(min-width: 768px){
+  .li-next-to-pic {
+    list-style-type: none;
+  }
+}
