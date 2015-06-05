@@ -257,6 +257,13 @@
   margin: 20px 0 10px 0;
   color: rgba(0,0,0,0.7);
 }
+
+.intro-header .site-heading small {
+  font-size: 80%;
+  margin: 20px 0 10px 0;
+  color: rgba(0,0,0,0.7);
+}
+
 section + section .intro-header + div{
   margin-top: -150px;
 }
