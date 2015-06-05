@@ -58,7 +58,7 @@ function scrollSpy(){
     // navSpy highlighting the nav as page scroll
     for (i = 0; i < navLinks.length; i++) {
       var theID = navLinks[i];
-      var selecter = "a[href='" + theID + "']";
+      var selecter = "#navbar a[href='" + theID + "']";
 
       if($(theID).length){
         var divPos = $(theID).offset().top; // get the offset of the div from the top of page
@@ -67,6 +67,16 @@ function scrollSpy(){
           $(theID+' .intro-header').css({'background-position-y': Math.abs(parseInt(divPos/10))+'px'});  
         }else{
           $(theID+' .intro-header').css({'background-position-y': '0px'});
+        }
+
+        if (divPos <= docHeight && docHeight < (divPos + divHeight)) {
+          var grandparent = $(selecter).parent().parent()[0];
+          if($(grandparent).is(":hidden")===true){
+            $(grandparent).css({'display': 'block'});
+          }
+          $(selecter).addClass("active");
+        } else {
+          $(selecter).removeClass("active");
         }
         
         // scroll the nav
