@@ -252,13 +252,13 @@
   font-size: 265%;
 }
 
-.intro-header .site-heading p {
+.intro-header .site-heading h3 {
   font-size: 100%;
   margin: 20px 0 10px 0;
   color: rgba(0,0,0,0.7);
 }
 
-.intro-header .site-heading small {
+.intro-header .site-heading p {
   font-size: 80%;
   margin: 20px 0 10px 0;
   color: rgba(0,0,0,0.7);
